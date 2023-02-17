@@ -2970,3 +2970,132 @@ in SYSTEMPATH\HTTP\RequestTrait.php on line 249.
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-17 17:33:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Es Jeruk' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM m...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(74): App\Models\menuModel->exists('Es Jeruk')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-17 17:33:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Es Jeruk' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM menu WHERE title= \'Es Jeruk')
+ 2 APPPATH\Controllers\Menu.php(74): App\Models\menuModel->exists('Es Jeruk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-17 17:33:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Jeruk' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM m...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(74): App\Models\menuModel->exists('Es Jeruk')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-17 17:33:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Jeruk' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM menu WHERE title= Es Jeruk')
+ 2 APPPATH\Controllers\Menu.php(74): App\Models\menuModel->exists('Es Jeruk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-17 17:34:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Es Jeruk' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM m...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(74): App\Models\menuModel->exists('Es Jeruk')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-17 17:34:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Es Jeruk' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM menu WHERE title = \'Es Jeruk')
+ 2 APPPATH\Controllers\Menu.php(74): App\Models\menuModel->exists('Es Jeruk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 17:56:46 --> Undefined variable $data
+in APPPATH\Controllers\Menu.php on line 101.
+ 1 APPPATH\Controllers\Menu.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Menu.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 17:57:37 --> Value of type bool is not callable
+in APPPATH\Controllers\Menu.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit('d2h1U3FCZzkraW9HY3d2ckZKaksyZz09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 17:58:57 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\Menu.php on line 84.
+ 1 APPPATH\Controllers\Menu.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\Menu.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit('d2h1U3FCZzkraW9HY3d2ckZKaksyZz09')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 17:59:38 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\Menu.php on line 84.
+ 1 APPPATH\Controllers\Menu.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\Menu.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit('d2h1U3FCZzkraW9HY3d2ckZKaksyZz09')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 18:00:06 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\Menu.php on line 84.
+ 1 APPPATH\Controllers\Menu.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\Menu.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit('d2h1U3FCZzkraW9HY3d2ckZKaksyZz09')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 18:02:49 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\Menu.php on line 84.
+ 1 APPPATH\Controllers\Menu.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\Menu.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit('d2h1U3FCZzkraW9HY3d2ckZKaksyZz09')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 19:07:58 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\Menu.php on line 65.
+ 1 APPPATH\Controllers\Menu.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\Menu.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->delete('VG1GeGpOTGxDTDMzdmE3NFJNZ2JXZz09')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 19:23:14 --> Undefined array key "alert"
+in APPPATH\Controllers\Menu.php on line 166.
+ 1 APPPATH\Controllers\Menu.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alert"', 'APPPATH\\Controllers\\Menu.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

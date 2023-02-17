@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class userModel extends Model
 {
-  protected $table1      = 'user';
+  protected $table1      = 'menu';
   protected $primary_column = 'title';
 
   protected function whereclause_system()

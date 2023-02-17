@@ -20,7 +20,7 @@
         <div class="row mb-3">
             <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
             <div class="col-sm-10">
-                <input type="file" class="form-control" id="gambar" name="gambar" value="<?= @$data['gambar'] ?>" required>
+                <input type="file" class="form-control" id="gambar" name="gambar" value="<?= @$data['gambar'] ?>">
             </div>
         </div>
         <div class="row mb-3">

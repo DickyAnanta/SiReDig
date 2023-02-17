@@ -19,10 +19,10 @@ class menuModel extends Model
   {
     $ret = false;
     $query = "SELECT * FROM " . $this->table1;
-    if (!empty($this->primary_column)) {
+    if (empty($this->primary_column)) {
       return "primary column be not empty";
     }
-    $query .= " WHERE $this->primary_column= '" . $item . "";
+    $query .= " WHERE $this->primary_column = '" . $item . "'";
     $data = $this->db->query($query)->getRowArray();
     if (!empty($data)) {
       $ret = $data;

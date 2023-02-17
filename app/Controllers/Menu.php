@@ -13,7 +13,7 @@ class Menu extends BaseController
         $this->menuModel = new MenuModel();
     }
 
-    public function index()
+    public function index($alert = '')
     {
         $datas = [
             "select" => "id, title, deskripsi, gambar, tipe, harga, stok",
@@ -28,13 +28,16 @@ class Menu extends BaseController
             ],
             "whereclause" => ""
         ];
-        $datas = $this->menuModel->menu(encrypt_url(1), $datas, "get");
-        // $data = $datas;
-        return view('/menu/menu_view', $datas);
+        $ret = $this->menuModel->menu(encrypt_url(1), $datas, "get");
+        if (!empty($alert['alert'])) {
+            $ret['alert'] = $alert['alert'];
+        }
+        return view('/menu/menu_view', $ret);
     }
 
     public function delete($id)
     {
+        $ret = [];
         $datas = [
             "select" => "id, title, deskripsi, gambar, tipe, harga, stok",
             "getreturn" => "data",
@@ -48,48 +51,125 @@ class Menu extends BaseController
             ],
             "whereclause" => ""
         ];
-        $data = $this->menuModel->menu($id, $datas, "delete");
-        return redirect()->to('menu');
+        if (empty($id)) {
+            $ret['alert'] = [
+                'title' => 'Error',
+                'type' => 'error',
+                'message' => 'ID is null',
+                'cobtn' => true,
+                'redirect' => false,
+                'redirect_to' => ''
+            ];
+        } else {
+            $data = $this->menuModel->menu($id, $datas, "delete");
+            if ($data) {
+                $ret['alert'] = [
+                    'title' => 'Succsess',
+                    'type' => 'success',
+                    'message' => 'Data berhasil dihapus',
+                    'cobtn' => false,
+                    'redirect' => true,
+                    'redirect_to' => 'menu/menu_view'
+                ];
+            } else {
+                $ret['alert'] = [
+                    'title' => 'Failed',
+                    'type' => 'error',
+                    'message' => 'Data gagal dihapus',
+                    'cobtn' => true,
+                    'redirect' => false,
+                    'redirect_to' => ''
+                ];
+            }
+        }
+        return $this->index($ret);
     }
 
     public function edit($id = '')
     {
         $ret = [];
-        if (empty($id)) {
-            $validation = $this->validate([
-                'title' => [
-                    'rules'  => 'required',
-                    'errors' => [
-                        'required' => 'Masukkan Judul Post.'
-                    ]
-                ]
-            ]);
-            $data = $this->request->getPost();
-            if (!$validation) {
-                return view('/menu/editmenu_view', [
-                    'validation' => $this->validator
-                ]);
-            } elseif ($validation) {
-                $tambah = $this->request->getPost(['title', 'deskripsi', 'gambar', 'tipe', 'harga', 'stok']);
-                if ($this->menuModel->exists() === true) {
+        $dt_post = @$this->request->getPost();
+        if (!empty($dt_post)) {
+            $exists = $this->menuModel->exists($dt_post['title']);
+            if (empty($id)) {
+                if ($exists) {
+                    $ret['alert'] = [
+                        'title' => 'Error Exists',
+                        'type' => 'error',
+                        'message' => 'Data sudah ada',
+                        'cobtn' => true,
+                        'redirect' => false,
+                        'redirect_to' => ''
+                    ];
                 } else {
-                    $tambah = $this->menuModel->menu(0, $tambah, "post");
+                    $sv_data = $this->menuModel->menu(0, $dt_post, "post");
+                    if ($sv_data['response']) {
+                        $ret['alert'] = [
+                            'title' => 'Succsess',
+                            'type' => 'success',
+                            'message' => 'Data berhasil ditambahkan',
+                            'cobtn' => false,
+                            'redirect' => true,
+                            'redirect_to' => 'menu/menu_view'
+                        ];
+                    } else {
+                        $ret['alert'] = [
+                            'title' => 'Failed',
+                            'type' => 'error',
+                            'message' => 'Data gagal ditambahkan',
+                            'cobtn' => true,
+                            'redirect' => false,
+                            'redirect_to' => ''
+                        ];
+                    }
                 }
-                return redirect()->to(base_url('menu'));
+            } else {
+                if ((decrypt_url($id) == @$exists['id']) || ($exists == false)) {
+                    $sv_data = $this->menuModel->menu($id, $dt_post, "patch");
+                    if ($sv_data['response']) {
+                        $ret['alert'] = [
+                            'title' => 'Succsess',
+                            'type' => 'success',
+                            'message' => 'Data berhasil edit',
+                            'cobtn' => false,
+                            'redirect' => false,
+                            'redirect_to' => ''
+                        ];
+                    } else {
+                        $ret['alert'] = [
+                            'title' => 'Failed',
+                            'type' => 'error',
+                            'message' => 'Data gagal diedit',
+                            'cobtn' => true,
+                            'redirect' => false,
+                            'redirect_to' => ''
+                        ];
+                    }
+                } else {
+                    $ret['alert'] = [
+                        'title' => 'Error Exists',
+                        'type' => 'error',
+                        'message' => 'Data sudah ada',
+                        'cobtn' => true,
+                        'redirect' => false,
+                        'redirect_to' => ''
+                    ];
+                }
+            }
+        }
+
+        if (!empty($id)) {
+            $data = $this->menuModel->detailed($id);
+        }
+
+        if (empty($data)) {
+            if (@$ret['alert']['type'] != 'success') {
+                $ret['data'] = @$dt_post;
             }
         } else {
-            if (!empty($this->request->getPost())) {
-                $dt_post = $this->request->getPost();
-                $update = $this->menuModel->menu($id, $dt_post, "patch");
-                if ($update['response']) {
-                    return redirect()->to(base_url('menu'));
-                }
-            }
-            $data = $this->menuModel->detailed($id);
-            $ret = [
-                'data' => $data
-            ];
+            $ret['data'] = @$data;
         }
+
         return view('/menu/editmenu_view', $ret);
     }
 }
