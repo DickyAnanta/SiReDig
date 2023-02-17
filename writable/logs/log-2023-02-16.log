@@ -1,0 +1,701 @@
+CRITICAL - 2023-02-16 15:31:05 --> Array callback must have exactly two elements
+in APPPATH\Models\menuModel.php on line 52.
+ 1 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(0, [...], 'get')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 15:32:52 --> Array callback must have exactly two elements
+in APPPATH\Models\menuModel.php on line 52.
+ 1 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(0, [...], 'get')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 15:34:12 --> Array callback must have exactly two elements
+in APPPATH\Models\menuModel.php on line 52.
+ 1 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(0, [...], 'get')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 15:34:47 --> Array callback must have exactly two elements
+in APPPATH\Models\menuModel.php on line 52.
+ 1 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(0, [...], 'get')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 15:34:49 --> Array callback must have exactly two elements
+in APPPATH\Models\menuModel.php on line 52.
+ 1 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(0, [...], 'get')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 15:35:49 --> foreach() argument must be of type array|object, null given
+in APPPATH\Models\menuModel.php on line 62.
+ 1 APPPATH\Models\menuModel.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Models\\menuModel.php', 62)
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(0, null, 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 15:40:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(645): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(834): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Menu.php(142): CodeIgniter\Model->__call('siredig', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:22:05 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 38.
+ 1 APPPATH\Helpers\security_helper.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 38)
+ 2 APPPATH\Models\menuModel.php(143): decrypt_url([...])
+ 3 APPPATH\Controllers\Menu.php(142): App\Models\menuModel->menu([...], 'pacth')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:28:06 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 38.
+ 1 APPPATH\Helpers\security_helper.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 38)
+ 2 APPPATH\Models\menuModel.php(114): decrypt_url(11)
+ 3 APPPATH\Controllers\Menu.php(142): App\Models\menuModel->menu(11, [...], 'pacth')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:28:27 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(142): encrypt_url(11)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:30:23 --> Call to undefined function App\Controllers\encrypt()
+in APPPATH\Controllers\Menu.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:30:40 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(142): encrypt_url(2)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:31:40 --> Call to undefined function App\Controllers\encrypt_iv()
+in APPPATH\Controllers\Menu.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:33:25 --> Undefined constant "App\Controllers\pacth"
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:38:07 --> Undefined variable $patch
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 APPPATH\Controllers\Menu.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $patch', 'APPPATH\\Controllers\\Menu.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:38:21 --> Undefined property: App\Controllers\Menu::$patch
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 APPPATH\Controllers\Menu.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Menu::$patch', 'APPPATH\\Controllers\\Menu.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:38:53 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(142): encrypt_url(11)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:39:07 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(142): encrypt_url('11')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:39:15 --> Call to undefined function App\Controllers\encrypt_file()
+in APPPATH\Controllers\Menu.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:39:21 --> Call to undefined function App\Controllers\encrypt_file()
+in APPPATH\Controllers\Menu.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:39:46 --> Call to undefined function App\Controllers\EncryptionException()
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:40:02 --> Call to undefined function App\Controllers\Encryption()
+in APPPATH\Controllers\Menu.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:40:25 --> Call to undefined function App\Controllers\encrypt_id()
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:40:49 --> Call to undefined function App\Controllers\encrypt_id()
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:41:01 --> Call to undefined function App\Controllers\encrypt()
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:41:50 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 38.
+ 1 APPPATH\Helpers\security_helper.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 38)
+ 2 APPPATH\Models\menuModel.php(114): decrypt_url(18)
+ 3 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(18, [...], 'patch')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:41:56 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 38.
+ 1 APPPATH\Helpers\security_helper.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 38)
+ 2 APPPATH\Models\menuModel.php(114): decrypt_url(12)
+ 3 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu(12, [...], 'patch')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:44:17 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(143): encrypt_url(11)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:44:25 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(143): encrypt_url('11')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:44:40 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(143): encrypt_url(9)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:45:01 --> Call to undefined function App\Controllers\encrypt_key()
+in APPPATH\Controllers\Menu.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:45:16 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(143): encrypt_url(9)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:46:07 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 12.
+ 1 APPPATH\Helpers\security_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 12)
+ 2 APPPATH\Controllers\Menu.php(143): encrypt_url(9)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 16:46:23 --> Undefined array key "encryption_file"
+in APPPATH\Helpers\security_helper.php on line 38.
+ 1 APPPATH\Helpers\security_helper.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encryption_file"', 'APPPATH\\Helpers\\security_helper.php', 38)
+ 2 APPPATH\Models\menuModel.php(202): decrypt_url('WEVNcEF5NGRuUlJ4enNEbzFySEE5UT09')
+ 3 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('WEVNcEF5NGRuUlJ4enNEbzFySEE5UT09', [...], 'delete')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:46:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('WEVNcEF5NGRuUlJ...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:46:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('WEVNcEF5NGRuUlJ4enNEbzFySEE5UT09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:47:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('WEVNcEF5NGRuUlJ...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:47:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('WEVNcEF5NGRuUlJ4enNEbzFySEE5UT09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:48:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(144): App\Models\menuModel->menu('WEVNcEF5NGRuUlJ...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:48:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =+jSB1zouAp+VsQwW6UnOVKCRwdTTsfXXlMeCF94QXa0=')
+ 2 APPPATH\Controllers\Menu.php(144): App\Models\menuModel->menu('WEVNcEF5NGRuUlJ4enNEbzFySEE5UT09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:49:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =fP8HXVmlr4FRlQC5mPgSkhMDccZcBXvEgEfDGD+QiXg=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('L0RJcWVINW9UN2k...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:49:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =fP8HXVmlr4FRlQC5mPgSkhMDccZcBXvEgEfDGD+QiXg=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =fP8HXVmlr4FRlQC5mPgSkhMDccZcBXvEgEfDGD+QiXg=')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('L0RJcWVINW9UN2k5d1p5bEE1N2d0QT09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:50:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =fP8HXVmlr4FRlQC5mPgSkhMDccZcBXvEgEfDGD+QiXg=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('L0RJcWVINW9UN2k...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:50:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =fP8HXVmlr4FRlQC5mPgSkhMDccZcBXvEgEfDGD+QiXg=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =fP8HXVmlr4FRlQC5mPgSkhMDccZcBXvEgEfDGD+QiXg=')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('L0RJcWVINW9UN2k5d1p5bEE1N2d0QT09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:50:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFl...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:50:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFlWamJ3YlhKZ0NTZz09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:51:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFl...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:51:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFlWamJ3YlhKZ0NTZz09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 16:54:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFl...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 16:54:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =eBYFJQnUCpx+xaVoioSwBbeFbmvMjfPvUDAQHlJAzaQ=')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFlWamJ3YlhKZ0NTZz09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 17:09:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =12' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROMmenu...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROMmenu...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROMmenu...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenu...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFl...', Array, 'delete')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 17:09:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id =12' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(204): CodeIgniter\Database\BaseConnection->query('DELETE FROMmenuWHERE id =12')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('cmZFVWVNQkVNOFlWamJ3YlhKZ0NTZz09', [...], 'delete')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 17:16:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = 11' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query(' UPDATE menu SE...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute(' UPDATE menu SE...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery(' UPDATE menu SE...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(122): CodeIgniter\Database\BaseConnection->query(' UPDATE menu SE...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('11', Array, 'patch')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 17:16:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = 11' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(122): CodeIgniter\Database\BaseConnection->query(' UPDATE menu SET ti WHERE id = 11')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('11', [...], 'patch')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 17:17:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = 11' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE menu SET...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE menu SET...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE menu SET...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(122): CodeIgniter\Database\BaseConnection->query('UPDATE menu SET...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('11', Array, 'patch')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 17:17:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = 11' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(122): CodeIgniter\Database\BaseConnection->query('UPDATE menu SET ti WHERE id = 11')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('11', [...], 'patch')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 17:29:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECTid, title...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECTid, title...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECTid, title...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(154): CodeIgniter\Database\BaseConnection->query('SELECTid, title...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('11', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 17:29:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(154): CodeIgniter\Database\BaseConnection->query('SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('11', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 18:10:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECTid, title...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECTid, title...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECTid, title...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(154): CodeIgniter\Database\BaseConnection->query('SELECTid, title...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('11', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 18:10:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(154): CodeIgniter\Database\BaseConnection->query('SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('11', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 18:11:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECTid, title...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECTid, title...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECTid, title...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(154): CodeIgniter\Database\BaseConnection->query('SELECTid, title...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('9', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 18:11:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(154): CodeIgniter\Database\BaseConnection->query('SELECTid, title, deskripsi, gambar, tipe, harga, stokFROM menu')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('9', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 18:11:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY title DESC' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query(' ORDER BY title...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute(' ORDER BY title...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery(' ORDER BY title...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query(' ORDER BY title...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('9', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 18:11:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY title DESC' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query(' ORDER BY title DESC')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('9', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 18:13:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY title DESC' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('ORDER BY title ...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('ORDER BY title ...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('ORDER BY title ...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('ORDER BY title ...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('9', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 18:13:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY title DESC' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('ORDER BY title DESC')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('9', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 18:14:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND menu id =9' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, titl...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, titl...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, titl...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('9', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 18:14:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND menu id =9' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('SELECT id, title, deskripsi, gambar, tipe, harga, stok FROM menu AND menu id =9')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('9', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 18:14:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND menu.id =9' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, titl...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, titl...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, titl...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('9', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 18:14:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND menu.id =9' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('SELECT id, title, deskripsi, gambar, tipe, harga, stok FROM menu AND menu.id =9')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('9', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 18:15:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND menu.id = 9' at line 1 in E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, titl...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, titl...')
+#2 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, titl...')
+#3 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#4 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\app\Controllers\Menu.php(143): App\Models\menuModel->menu('9', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-16 18:15:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND menu.id = 9' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\menuModel.php(174): CodeIgniter\Database\BaseConnection->query('SELECT id, title, deskripsi, gambar, tipe, harga, stok FROM menu AND menu.id = 9')
+ 2 APPPATH\Controllers\Menu.php(143): App\Models\menuModel->menu('9', [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
