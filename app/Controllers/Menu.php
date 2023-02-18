@@ -69,7 +69,7 @@ class Menu extends BaseController
                     'message' => 'Data berhasil dihapus',
                     'cobtn' => false,
                     'redirect' => true,
-                    'redirect_to' => 'menu/menu_view'
+                    'redirect_to' => 'menu/index'
                 ];
             } else {
                 $ret['alert'] = [
@@ -110,7 +110,7 @@ class Menu extends BaseController
                             'message' => 'Data berhasil ditambahkan',
                             'cobtn' => false,
                             'redirect' => true,
-                            'redirect_to' => 'menu/menu_view'
+                            'redirect_to' => 'menu/index'
                         ];
                     } else {
                         $ret['alert'] = [

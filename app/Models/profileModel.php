@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class profileModel extends Model
 {
-  protected $table1      = 'profile';
+  protected $tableprofile      = 'profile';
   protected $primary_column = 'nama';
 
   protected function whereclause_system()
@@ -18,7 +18,7 @@ class profileModel extends Model
   public function exists($item = 0)
   {
     $ret = false;
-    $query = "SELECT * FROM " . $this->table1;
+    $query = "SELECT * FROM " . $this->tableprofile;
     if (!empty($this->primary_column)) {
       return "primary column be not empty";
     }
@@ -34,7 +34,7 @@ class profileModel extends Model
   {
     $ret = false;
     if (!empty($id)) {
-      $query = "SELECT * FROM " . $this->table1;
+      $query = "SELECT * FROM " . $this->tableprofile;
       $query .= " WHERE id = " . decrypt_url($id);
       $data = $this->db->query($query)->getRowArray();
       if (!empty($data)) {
@@ -68,11 +68,11 @@ class profileModel extends Model
       $colum = "(" . substr($colum, 0, -2) . ")";
       $values = "(" . substr($values, 0, -2) . ")";
 
-      $sql = "INSERT INTO " . $this->table1 . " " . $colum . "VALUE" . $values;
+      $sql = "INSERT INTO " . $this->tableprofile . " " . $colum . "VALUE" . $values;
       if ($this->db->query($sql)) {
         $ret = [
           "response" => true,
-          "response_message" => "Sucses To Insert Data."
+          "response_message" => "Sucses To Insert Data.",
         ];
       } else {
         $ret = [
@@ -91,7 +91,7 @@ class profileModel extends Model
           }
         }
 
-        $sql = "INSERT INTO" . $this->table1 . "SET" . substr($patch_column, 0, 2) . "WHERE id = " . $id;
+        $sql = "INSERT INTO" . $this->tableprofile . "SET" . substr($patch_column, 0, 2) . "WHERE id = " . $id;
         if ($this->db->query($sql)) {
           $ret = [
             "response" => true,
@@ -118,7 +118,7 @@ class profileModel extends Model
             $patch_column .= $key . " = '" . $value . "', ";
           }
         }
-        $sql = "UPDATE " . $this->table1 . " SET " . substr($patch_column, 0, -2) . " WHERE id = " . $id;
+        $sql = "UPDATE " . $this->tableprofile . " SET " . substr($patch_column, 0, -2) . " WHERE id = " . $id;
         if ($this->db->query($sql)) {
           $ret = [
             "response" => true,
@@ -140,7 +140,7 @@ class profileModel extends Model
       // -?whereclause
 
       $query = '';
-      $query .= "SELECT " . @$datas["select"] . " FROM " . $this->table1;
+      $query .= "SELECT " . @$datas["select"] . " FROM " . $this->tableprofile;
       if (!empty($this->whereclause_system())) {
         $query .= " WHERE ";
       }
@@ -186,11 +186,11 @@ class profileModel extends Model
     } elseif (strtoupper($type) === "DELETE") {
       $query = '';
       // if ($datas == 1) {
-      //   $query .= "UPDATE" . $this->table1 . "SET row_status = 2, updated_by = " . 1 . "WHERE id =" . decrypt_url($id);
+      //   $query .= "UPDATE" . $this->tableprofile . "SET row_status = 2, updated_by = " . 1 . "WHERE id =" . decrypt_url($id);
       // } elseif ($datas == 2) {
-      //   $query .= "DELETE FROM" . $this->table1 . "WHERE id = " . decrypt_url($id) ;
+      //   $query .= "DELETE FROM" . $this->tableprofile . "WHERE id = " . decrypt_url($id) ;
       // }
-      $query .=   " DELETE FROM " . $this->table1 . " WHERE id = " . decrypt_url($id);
+      $query .=   " DELETE FROM " . $this->tableprofile . " WHERE id = " . decrypt_url($id);
 
       if ($this->db->query($query)) {
         $ret = true;
@@ -209,7 +209,7 @@ class profileModel extends Model
 
     if (!empty($id)) {
       $id = decrypt_url($id);
-      $query_next = "SELECT" . $this->table1 . " id.FROM " . $this->table1 . "WHERE" . $this;
+      $query_next = "SELECT" . $this->tableprofile . " id.FROM " . $this->tableprofile . "WHERE" . $this;
     }
   }
 }

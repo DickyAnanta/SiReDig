@@ -3,15 +3,18 @@
 namespace App\Controllers;
 
 use App\Models\userModel;
+use App\Models\profileModel;
 use CodeIgniter\Encryption\Exceptions\EncryptionException;
 
 class User extends BaseController
 {
     protected $userModel;
+    protected $profileModel;
 
     public function __construct()
     {
         $this->userModel = new userModel();
+        $this->profileModel = new profileModel();
     }
 
     public function index($alert = '')
@@ -103,8 +106,24 @@ class User extends BaseController
                         'redirect_to' => ''
                     ];
                 } else {
-                    $sv_data = @$this->userModel->user(0, $dt_post, "post");
+                    $data = [
+                        'username' => $dt_post['username'],
+                        'password' => $dt_post['password'],
+                        'email' => $dt_post['email'],
+                        'status' => 0,
+                        'role' => $dt_post['role']
+                    ];
+                    $sv_data = @$this->userModel->user(0, $data, "post");
                     if ($sv_data['response']) {
+                        $data = [
+                            'user_id' => $sv_data['last_insert_id'],
+                            'nama' => $dt_post['nama'],
+                            'kelamin' => $dt_post['kelamin'],
+                            'tanggal_lahir' => $dt_post['tanggal_lahir'],
+                            'telepon' => $dt_post['telepon'],
+                            'alamat' => $dt_post['alamat']
+                        ];
+                        $sql2 = $this->profileModel->profile(0, $data, "post");
                         $ret['alert'] = [
                             'title' => 'Success',
                             'type' => 'success',
