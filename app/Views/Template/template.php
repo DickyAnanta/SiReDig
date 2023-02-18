@@ -8,24 +8,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AdminLTE 3 | Top Navigation</title>
+  <title>Siredig</title>
 
   <!-- base url -->
-
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="/assets/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/assets/js/sweetalert2.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="/assets/dist/css/adminlte.min.css">
   <!-- aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- css saya -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <?php
+  $request = \Config\Services::request();
+  $link1 = $request->uri->getSegment(1);
+  $rootDir = dirname(__FILE__);
+  if (file_exists(str_replace("\\", "/", $rootDir) . "/css/" . $link1 . ".php")) {
+    echo view('template/css/' . $link1);
+  }
+  ?>
 </head>
 
 <body class="hold-transition layout-top-nav">
+  <div id="alert-data" title="<?= @$alert["title"]; ?>" type="<?= @$alert["type"]; ?>" message="<?= @$alert["message"]; ?>" cobtn="<?= @$alert["cobtn"]; ?>" redirect="<?= @$alert["redirect"]; ?>" redirect-to="<?= @$alert["redirect_to"]; ?>"></div>
   <div class="wrapper">
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
@@ -45,17 +55,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
         </ul>
         <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-          <li class="nav-item NB">
-            <a href="index.php" class="teks">List Pengguna</a>
-          </li>
-          <li class="nav-item NB">
-            <a href="menu.php" class="teks">Tambah Pengguna</a>
-          </li>
-          <li class="nav-item NB">
-            <a href="daftarmenu.php" class="teks">List Menu</a>
-          </li>
-          <li class="nav-item NB">
-            <a href="order.php" class="teks">Tambah Menu</a>
+          <li class="nav-item dropdown">
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Admin</a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item">List User</a></li>
+              <li><a href="#" class="dropdown-item">Form User</a></li>
+
+              <li class="dropdown-divider"></li>
+
+              <li><a href="#" class="dropdown-item">List Menu</a></li>
+              <li><a href="#" class="dropdown-item">Form Menu</a></li>
+            </ul>
           </li>
           <li class="nav-item login ml-4">
             <a class="btn btn-sm masuk" href="../index.php" role="button">Keluar</a>
@@ -77,29 +87,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <?= $this->renderSection('content') ?>
 
   </tbody>
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
 
+  <script src="/assets/plugins/jquery/jquery.min.js"></script>
   <!-- sweetalert -->
-  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="/assets/js/sweetalert2.all.min.js"></script>
+  <!-- sweetalert -->
   <!-- tilt -->
-  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <script src="/assets/js/vanilla-tilt.min.js/"></script>
+  <!-- <script type="text/javascript" src="/assets/vanilla-tilt.min.js"></script> -->
   <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- aos -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+  <script type="text/javascript">
     AOS.init();
   </script>
+  <script src="/assets/declar.js"></script>
   <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.min.js"></script>
+  <script src="/assets/dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
-  <script src="dist/js/demo.js"></script>
+  <script src="/assets/dist/js/demo.js"></script>
+  <script type="text/javascript" src="/assets/js/alert.js"></script>
+
+  <?php
+  if (file_exists(str_replace("\\", "/", $rootDir) . "/js/" . $link1 . ".php")) {
+    echo view('template/css/' . $link1);
+  }
+  ?>
 </body>
 
 </html>

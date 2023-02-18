@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="col-auto">
-                    <a class="btn" href="index"><i class="fa fa-list mr-2" aria-hidden="true"></i>list Menu</a>
+                    <a class="btn" href="/menu/index"><i class="fa fa-list mr-2" aria-hidden="true"></i>list Menu</a>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -92,7 +92,7 @@
                                 <div class="row tombolform">
                                     <div class="col-sm-2">
                                         <td>
-                                            <button type="submit" class="btn btn-success btn-sm">Simpan</button>
+                                            <button type="submit" class="btn btn-sm">Simpan</button>
                                         </td>
                                     </div>
                                 </div>

@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="col-auto">
-          <a class="btn" href="menu/edit/"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Tambah Menu</a>
+          <a class="btn" href="/menu/edit"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Tambah Menu</a>
         </div>
       </div>
     </div><!-- /.container-fluid -->
@@ -77,8 +77,8 @@
                     <td class="menu"><?= $value['harga'] ?></td>
                     <td class="menu"><?= $value['stok'] ?></td>
                     <td class="menu">
-                      <a class="btn btn-danger" href="/menu/edit/<?= encrypt_url($value['id']) ?>">Edit</a>
-                      <a class="btn btn-danger" href="/menu/delete/<?= encrypt_url($value['id']) ?>">Hapus</a>
+                      <a class="btn" href="/menu/edit/<?= encrypt_url($value['id']) ?>">Edit</a>
+                      <a class="btn" href="/menu/delete/<?= encrypt_url($value['id']) ?>">Hapus</a>
                     </td>
                   </tr>
                 <?php endforeach; ?>
