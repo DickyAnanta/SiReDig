@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class userModel extends Model
 {
   protected $table1      = 'user';
-  protected $primary_column = 'title';
+  protected $primary_column = 'username';
 
   protected function whereclause_system()
   {
@@ -19,10 +19,10 @@ class userModel extends Model
   {
     $ret = false;
     $query = "SELECT * FROM " . $this->table1;
-    if (!empty($this->primary_column)) {
+    if (empty($this->primary_column)) {
       return "primary column be not empty";
     }
-    $query .= " WHERE $this->primary_column= '" . $item . "";
+    $query .= " WHERE $this->primary_column = '" . $item . "'";
     $data = $this->db->query($query)->getRowArray();
     if (!empty($data)) {
       $ret = $data;
@@ -44,7 +44,7 @@ class userModel extends Model
     }
   }
 
-  public function menu($id = 0, $datas = "", $type = "")
+  public function user($id = 0, $datas = "", $type = "")
   {
     $ret = false;
     if (empty($type)) {
