@@ -1,35 +1,99 @@
 <?= $this->extend('Template/template.php') ?>
 
-<?= $this->section('content') ?>
+<?= $this->Section('content') ?>
 
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper daftarmenu">
+	<!-- Content Header (Page header) -->
+	<div class="content-header">
+		<div class="container">
+			<div class="row mb-3 mt-3 justify-content-end">
+				<div class="col">
+					<h3>List Menu</h3>
+				</div>
+				<div class="col-auto">
+					<div class="card-tools">
+						<div class="input-group input-group-sm" style="width: 175px;">
+							<input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+							<div class="input-group-append">
+								<button type="submit" class="btn btn-default">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-auto">
+					<a class="btn" href="/menu/edit"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Tambah Menu</a>
+				</div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</div>
+	<!-- /.content-header -->
 
-<div class="container mt-5">
-	<h1>Menu</h1>
-	<table class="table">
-		<thead>
-			<tr>
-				<th scope="col">#</th>
-				<th scope="col">Title</th>
-				<th scope="col">Gambar</th>
-				<th scope="col">Harga</th>
-				<th scope="col">Action</th>
-			</tr>
-		</thead>
-
-		<?php $i = 1; ?>
-		<?php foreach ($data as $key => $value) : ?>
-			<tr>
-				<th scope="row"><?= $i++; ?></th>
-				<td><?= $value['title'] ?></td>
-				<td><img src="/assets/img/<?= $value['gambar'] ?>" width="100px"></td>
-				<td><?= $value['harga'] ?></td>
-				<td>
-					<a class="btn btn-danger" href="/menu/edit/<?= encrypt_url($value['id']) ?>">Edit</a>
-					<a class="btn btn-danger" href="/menu/delete/<?= encrypt_url($value['id']) ?>">Hapus</a>
-				</td>
-			</tr>
-		<?php endforeach; ?>
-	</table>
-	<a class="btn btn-danger" href="<?= base_url('/menu/edit/') ?>">Tambah</a>
+	<!-- Main content -->
+	<div class="content menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- <div class="card border-top-0"> -->
+					<!-- /.card-header -->
+					<div class="table-responsive p-1">
+						<table class="table table-hover table-borderless table-striped text-nowrap">
+							<thead>
+								<tr>
+									<div class="row">
+										<div class="col">
+											<th>Menu</th>
+										</div>
+										<div class="col">
+											<th>Nama</th>
+										</div>
+										<div class="col">
+											<th>Deskripsi</th>
+										</div>
+										<div class="col">
+											<th>Type</th>
+										</div>
+										<div class="col">
+											<th>Harga</th>
+										</div>
+										<div class="col">
+											<th>Stok</th>
+										</div>
+										<div class="col">
+											<th>Action</th>
+										</div>
+									</div>
+								</tr>
+							</thead>
+							<tbody>
+								<?php foreach ($data as $key => $value) : ?>
+									<tr>
+										<td><img src="/img/<?= $value['gambar'] ?>" alt=""></td>
+										<td class="menu"><?= $value['title'] ?></td>
+										<td class="menu"><?= $value['deskripsi'] ?></td>
+										<td class="menu"><?= $value['tipe'] ?></td>
+										<td class="menu"><?= $value['harga'] ?></td>
+										<td class="menu"><?= $value['stok'] ?></td>
+										<td class="menu">
+											<a class="btn" href="/menu/edit/<?= encrypt_url($value['id']) ?>">Edit</a>
+											<a class="btn" href="/menu/delete/<?= encrypt_url($value['id']) ?>">Hapus</a>
+										</td>
+									</tr>
+								<?php endforeach; ?>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.card-body -->
+				</div>
+				<!-- /.card -->
+			</div>
+		</div>
+	</div>
 </div>
+<!-- /.content -->
+
+</div>
+<!-- /.content-wrapper -->
 <?= $this->endSection() ?>

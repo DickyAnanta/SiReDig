@@ -76,14 +76,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- /.navbar -->
   </div>
   <tbody>
-    <?php
-    if (!empty($alert)) {
-      echo '<pre>';
-      print_r($alert);
-      echo '</pre>';
-    }
-    ?>
-
     <?= $this->renderSection('content') ?>
 
   </tbody>
