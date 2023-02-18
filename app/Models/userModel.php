@@ -72,7 +72,8 @@ class userModel extends Model
       if ($this->db->query($sql)) {
         $ret = [
           "response" => true,
-          "response_message" => "Sucses To Insert Data."
+          "response_message" => "Sucses To Insert Data.",
+          "last_insert_id" => $this->db->insertID()
         ];
       } else {
         $ret = [
@@ -80,7 +81,6 @@ class userModel extends Model
           "response_message" => "Failde to insert data. (" . $this->db->error()["message"] . ") . Query : (" . $sql . ")"
         ];
       }
-      // dd($type);
     } elseif (strtoupper($type) === "PUT") {
       if (!empty($id)) {
         $id = decrypt_url($id);

@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class userModel extends Model
+class profileModel extends Model
 {
-  protected $table1      = 'menu';
-  protected $primary_column = 'title';
+  protected $table1      = 'profile';
+  protected $primary_column = 'nama';
 
   protected function whereclause_system()
   {
@@ -44,7 +44,7 @@ class userModel extends Model
     }
   }
 
-  public function menu($id = 0, $datas = "", $type = "")
+  public function profile($id = 0, $datas = "", $type = "")
   {
     $ret = false;
     if (empty($type)) {

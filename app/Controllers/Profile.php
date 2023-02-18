@@ -2,22 +2,22 @@
 
 namespace App\Controllers;
 
-use App\Models\userModel;
+use App\Models\profileModel;
 use CodeIgniter\Encryption\Exceptions\EncryptionException;
 
-class User extends BaseController
+class Profile extends BaseController
 {
-    protected $userModel;
+    protected $profileModel;
 
     public function __construct()
     {
-        $this->userModel = new userModel();
+        $this->profileModel = new profileModel();
     }
 
     public function index($alert = '')
     {
         $datas = [
-            "select" => "id, username, password, email, status, role",
+            "select" => "id, user_id, nama, kelamin, tanggal_lahir, telepon, alamat",
             "getreturn" => "data",
             "order_by" => [
                 "column" => "",
@@ -29,18 +29,18 @@ class User extends BaseController
             ],
             "whereclause" => ""
         ];
-        $ret = $this->userModel->user(0, $datas, "get");
+        $ret = $this->profileModel->profile(0, $datas, "get");
         if (!empty($alert['alert'])) {
             $ret['alert'] = $alert['alert'];
         }
-        return view('/user/user_view', $ret);
+        return view('profile/profile_view', $ret);
     }
 
     public function delete($id)
     {
         $ret = [];
         $datas = [
-            "select" => "id, title, deskripsi, gambar, tipe, harga, stok",
+            "select" => "id, user_id, nama, kelamin, tanggal_lahir, telepon, alamat",
             "getreturn" => "data",
             "order_by" => [
                 "column" => "",
@@ -62,7 +62,7 @@ class User extends BaseController
                 'redirect_to' => ''
             ];
         } else {
-            $data = $this->userModel->user($id, $datas, "delete");
+            $data = $this->profileModel->profile($id, $datas, "delete");
             if ($data) {
                 $ret['alert'] = [
                     'title' => 'Succsess',
@@ -70,7 +70,7 @@ class User extends BaseController
                     'message' => 'Data berhasil dihapus',
                     'cobtn' => false,
                     'redirect' => true,
-                    'redirect_to' => 'menu/menu_view'
+                    'redirect_to' => 'profile/profile_view'
                 ];
             } else {
                 $ret['alert'] = [
@@ -91,7 +91,7 @@ class User extends BaseController
         $ret = [];
         $dt_post = @$this->request->getPost();
         if (!empty($dt_post)) {
-            $exists = $this->userModel->exists($dt_post['username']);
+            $exists = $this->profileModel->exists($dt_post['nama']);
             if (empty($id)) {
                 if ($exists) {
                     $ret['alert'] = [
@@ -103,7 +103,7 @@ class User extends BaseController
                         'redirect_to' => ''
                     ];
                 } else {
-                    $sv_data = @$this->userModel->user(0, $dt_post, "post");
+                    $sv_data = @$this->profileModel->profile(0, $dt_post, "post");
                     if ($sv_data['response']) {
                         $ret['alert'] = [
                             'title' => 'Success',
@@ -111,7 +111,7 @@ class User extends BaseController
                             'message' => 'Data berhasil ditambahkan',
                             'cobtn' => false,
                             'redirect' => true,
-                            'redirect_to' => 'user/user_view'
+                            'redirect_to' => 'profile/profile_view'
                         ];
                     } else {
                         $ret['alert'] = [
@@ -126,7 +126,7 @@ class User extends BaseController
                 }
             } else {
                 if ((decrypt_url($id) == @$exists['id']) || ($exists == false)) {
-                    $sv_data = $this->userModel->user($id, $dt_post, "patch");
+                    $sv_data = $this->profileModel->profile($id, $dt_post, "patch");
                     if ($sv_data['response']) {
                         $ret['alert'] = [
                             'title' => 'Succsess',
@@ -160,7 +160,7 @@ class User extends BaseController
         }
 
         if (!empty($id)) {
-            $data = $this->userModel->detailed($id);
+            $data = $this->profileModel->detailed($id);
         }
 
         if (empty($data)) {
@@ -171,6 +171,6 @@ class User extends BaseController
             $ret['data'] = @$data;
         }
 
-        return view('/user/edituser_view', $ret);
+        return view('/profile/editprofile_view', $ret);
     }
 }
