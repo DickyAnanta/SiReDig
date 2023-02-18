@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class userModel extends Model
 {
-  protected $table1      = 'user';
-  protected $primary_column = 'title';
+  protected $tableuser      = 'user';
+  protected $primary_column = 'username';
 
   protected function whereclause_system()
   {
@@ -18,11 +18,11 @@ class userModel extends Model
   public function exists($item = 0)
   {
     $ret = false;
-    $query = "SELECT * FROM " . $this->table1;
-    if (!empty($this->primary_column)) {
+    $query = "SELECT * FROM " . $this->tableuser;
+    if (empty($this->primary_column)) {
       return "primary column be not empty";
     }
-    $query .= " WHERE $this->primary_column= '" . $item . "";
+    $query .= " WHERE $this->primary_column = '" . $item . "'";
     $data = $this->db->query($query)->getRowArray();
     if (!empty($data)) {
       $ret = $data;
@@ -34,7 +34,7 @@ class userModel extends Model
   {
     $ret = false;
     if (!empty($id)) {
-      $query = "SELECT * FROM " . $this->table1;
+      $query = "SELECT * FROM " . $this->tableuser;
       $query .= " WHERE id = " . decrypt_url($id);
       $data = $this->db->query($query)->getRowArray();
       if (!empty($data)) {
@@ -44,7 +44,7 @@ class userModel extends Model
     }
   }
 
-  public function menu($id = 0, $datas = "", $type = "")
+  public function user($id = 0, $datas = "", $type = "")
   {
     $ret = false;
     if (empty($type)) {
@@ -68,19 +68,19 @@ class userModel extends Model
       $colum = "(" . substr($colum, 0, -2) . ")";
       $values = "(" . substr($values, 0, -2) . ")";
 
-      $sql = "INSERT INTO " . $this->table1 . " " . $colum . "VALUE" . $values;
+      $sql = "INSERT INTO " . $this->tableuser . " " . $colum . "VALUE" . $values;
       if ($this->db->query($sql)) {
         $ret = [
           "response" => true,
-          "response_message" => "Sucses To Insert Data."
+          "response_message" => "Sucses To Insert Data.",
+          "last_insert_id" => $this->db->insertID()
         ];
       } else {
         $ret = [
           "response" => false,
-          "response_message" => "Failde to insert data. (" . $this->db->error()["message"] . ") . Query : (" . $sql . ")"
+          "response_message" => "Failed to insert data. (" . $this->db->error()["message"] . ") . Query : (" . $sql . ")"
         ];
       }
-      // dd($type);
     } elseif (strtoupper($type) === "PUT") {
       if (!empty($id)) {
         $id = decrypt_url($id);
@@ -91,7 +91,7 @@ class userModel extends Model
           }
         }
 
-        $sql = "INSERT INTO" . $this->table1 . "SET" . substr($patch_column, 0, 2) . "WHERE id = " . $id;
+        $sql = "INSERT INTO" . $this->tableuser . "SET" . substr($patch_column, 0, 2) . "WHERE id = " . $id;
         if ($this->db->query($sql)) {
           $ret = [
             "response" => true,
@@ -118,7 +118,7 @@ class userModel extends Model
             $patch_column .= $key . " = '" . $value . "', ";
           }
         }
-        $sql = "UPDATE " . $this->table1 . " SET " . substr($patch_column, 0, -2) . " WHERE id = " . $id;
+        $sql = "UPDATE " . $this->tableuser . " SET " . substr($patch_column, 0, -2) . " WHERE id = " . $id;
         if ($this->db->query($sql)) {
           $ret = [
             "response" => true,
@@ -140,7 +140,7 @@ class userModel extends Model
       // -?whereclause
 
       $query = '';
-      $query .= "SELECT " . @$datas["select"] . " FROM " . $this->table1;
+      $query .= "SELECT " . @$datas["select"] . " FROM " . $this->tableuser;
       if (!empty($this->whereclause_system())) {
         $query .= " WHERE ";
       }
@@ -186,11 +186,11 @@ class userModel extends Model
     } elseif (strtoupper($type) === "DELETE") {
       $query = '';
       // if ($datas == 1) {
-      //   $query .= "UPDATE" . $this->table1 . "SET row_status = 2, updated_by = " . 1 . "WHERE id =" . decrypt_url($id);
+      //   $query .= "UPDATE" . $this->tableuser . "SET row_status = 2, updated_by = " . 1 . "WHERE id =" . decrypt_url($id);
       // } elseif ($datas == 2) {
-      //   $query .= "DELETE FROM" . $this->table1 . "WHERE id = " . decrypt_url($id) ;
+      //   $query .= "DELETE FROM" . $this->tableuser . "WHERE id = " . decrypt_url($id) ;
       // }
-      $query .=   " DELETE FROM " . $this->table1 . " WHERE id = " . decrypt_url($id);
+      $query .=   " DELETE FROM " . $this->tableuser . " WHERE id = " . decrypt_url($id);
 
       if ($this->db->query($query)) {
         $ret = true;
@@ -209,7 +209,7 @@ class userModel extends Model
 
     if (!empty($id)) {
       $id = decrypt_url($id);
-      $query_next = "SELECT" . $this->table1 . " id.FROM " . $this->table1 . "WHERE" . $this;
+      $query_next = "SELECT" . $this->tableuser . " id.FROM " . $this->tableuser . "WHERE" . $this;
     }
   }
 }

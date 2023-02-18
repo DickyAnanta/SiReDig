@@ -32,7 +32,7 @@ class Menu extends BaseController
         if (!empty($alert['alert'])) {
             $ret['alert'] = $alert['alert'];
         }
-        return view('/menu/daftarmenu_view', $ret);
+        return view('/menu/menu_view', $ret);
     }
 
     public function delete($id)
@@ -69,7 +69,7 @@ class Menu extends BaseController
                     'message' => 'Data berhasil dihapus',
                     'cobtn' => false,
                     'redirect' => true,
-                    'redirect_to' => 'menu/daftarmenu_view'
+                    'redirect_to' => 'menu/index'
                 ];
             } else {
                 $ret['alert'] = [
@@ -110,7 +110,7 @@ class Menu extends BaseController
                             'message' => 'Data berhasil ditambahkan',
                             'cobtn' => false,
                             'redirect' => true,
-                            'redirect_to' => 'menu/daftarmenu_view'
+                            'redirect_to' => 'menu/index'
                         ];
                     } else {
                         $ret['alert'] = [
@@ -170,6 +170,6 @@ class Menu extends BaseController
             $ret['data'] = @$data;
         }
 
-        return view('/menu/formmenu_view', $ret);
+        return view('/menu/editmenu_view', $ret);
     }
 }
