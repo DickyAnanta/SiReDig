@@ -18,7 +18,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="/assets/plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="/assets/js/sweetalert2.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/assets/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/assets/adminlte/css/adminlte.min.css">
   <!-- aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- css saya -->
@@ -97,9 +97,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </script>
   <script src="/assets/declar.js"></script>
   <!-- AdminLTE App -->
-  <script src="/assets/dist/js/adminlte.min.js"></script>
+  <script src="/assets/adminlte/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
-  <script src="/assets/dist/js/demo.js"></script>
+  <script src="/assets/adminlte/js/demo.js"></script>
   <script type="text/javascript" src="/assets/js/alert.js"></script>
 
   <?php
