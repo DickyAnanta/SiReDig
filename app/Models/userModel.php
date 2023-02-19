@@ -69,6 +69,8 @@ class userModel extends Model
       $values = "(" . substr($values, 0, -2) . ")";
 
       $sql = "INSERT INTO " . $this->tableuser . " " . $colum . "VALUE" . $values;
+      $this->join('profile', 'profile.IDprofile=nama.IDprofile')
+        ->get()->getResultArray();
       if ($this->db->query($sql)) {
         $ret = [
           "response" => true,
