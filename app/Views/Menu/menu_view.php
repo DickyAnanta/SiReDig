@@ -70,7 +70,7 @@
 							<tbody>
 								<?php foreach ($data as $key => $value) : ?>
 									<tr>
-										<td><img src="/img/<?= $value['gambar'] ?>" alt=""></td>
+										<td><img src="/assets/img/<?= $value['gambar'] ?>" alt=""></td>
 										<td class="menu"><?= $value['title'] ?></td>
 										<td class="menu"><?= $value['deskripsi'] ?></td>
 										<td class="menu"><?= $value['tipe'] ?></td>

@@ -73,7 +73,7 @@ class User extends BaseController
                     'message' => 'Data berhasil dihapus',
                     'cobtn' => false,
                     'redirect' => true,
-                    'redirect_to' => 'menu/menu_view'
+                    'redirect_to' => 'index'
                 ];
             } else {
                 $ret['alert'] = [
@@ -130,7 +130,7 @@ class User extends BaseController
                             'message' => 'Data berhasil ditambahkan',
                             'cobtn' => false,
                             'redirect' => true,
-                            'redirect_to' => 'user/user_view'
+                            'redirect_to' => 'user/index'
                         ];
                     } else {
                         $ret['alert'] = [
