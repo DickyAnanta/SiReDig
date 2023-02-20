@@ -1,0 +1,1211 @@
+ERROR - 2023-02-18 02:55:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'siredig', 3306, '', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#9 {main}
+CRITICAL - 2023-02-18 02:55:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, title, deskripsi, gambar, tipe, harga, stok FROM menu')
+ 3 APPPATH\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1JpYWNIUVdzNG1sZz09', [...], 'get')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 03:17:24 --> Undefined variable $data
+in APPPATH\Views\User\user_view.php on line 20.
+ 1 APPPATH\Views\User\user_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\User\\user_view.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\user_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/user_view', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('/user/user_view')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 04:03:21 --> Cannot access offset of type string on string
+in APPPATH\Controllers\User.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 04:04:55 --> Cannot access offset of type string on string
+in APPPATH\Controllers\User.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 04:05:25 --> Cannot access offset of type string on string
+in APPPATH\Controllers\User.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 04:08:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dickyananta' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(41): App\Models\userModel->exists('dickyananta')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 04:08:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dickyananta' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM user WHERE username= \'dickyananta')
+ 2 APPPATH\Controllers\User.php(41): App\Models\userModel->exists('dickyananta')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 04:10:50 --> Undefined array key "password"
+in APPPATH\Views\User\user_view.php on line 24.
+ 1 APPPATH\Views\User\user_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Views\\User\\user_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\user_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/user_view', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('/user/user_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 04:13:35 --> Undefined array key "password"
+in APPPATH\Views\User\user_view.php on line 24.
+ 1 APPPATH\Views\User\user_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Views\\User\\user_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\user_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/user_view', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('/user/user_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 04:14:26 --> Undefined array key "password"
+in APPPATH\Views\User\user_view.php on line 24.
+ 1 APPPATH\Views\User\user_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Views\\User\\user_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\user_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/user_view', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('/user/user_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 04:18:56 --> Undefined array key "id"
+in APPPATH\Views\User\user_view.php on line 29.
+ 1 APPPATH\Views\User\user_view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\User\\user_view.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\user_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/user_view', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('/user/user_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 05:47:22 --> Cannot access offset of type string on string
+in APPPATH\Models\userModel.php on line 72.
+ 1 APPPATH\Controllers\User.php(53): App\Models\userModel->user(0, [...], 'post')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 05:48:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Array' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(53): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 05:48:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Array' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (username , password , email )VALUE(\'dickyananta 45\' , \'dicky12345\' , \'dicky@gmail.com\' )Array')
+ 2 APPPATH\Controllers\User.php(53): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 05:49:21 --> Cannot access offset of type string on string
+in APPPATH\Models\userModel.php on line 72.
+ 1 APPPATH\Controllers\User.php(53): App\Models\userModel->user(0, [...], 'post')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 06:51:55 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(645): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(834): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\User.php(62): CodeIgniter\Model->__call('menu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->delete('eVlJZUtkeWJzc3JtNjVZZzVGenJ0UT09')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 06:52:29 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(645): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(834): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\User.php(62): CodeIgniter\Model->__call('menu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->delete('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 07:26:03 --> mysqli_sql_exception: Unknown column 'username' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, user...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, user...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, user...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Profile.php(32): App\Models\profileModel->profile(0, Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Profile->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 07:26:03 --> Unknown column 'username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, username, password, email, status, role FROM profile')
+ 2 APPPATH\Controllers\Profile.php(32): App\Models\profileModel->profile(0, [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 07:29:59 --> Invalid file: "profile/profile_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile/profile_view.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('profile/profile_view', [], true)
+ 3 APPPATH\Controllers\Profile.php(36): view('profile/profile_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 13:07:09 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'siredig', 3306, '', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#9 {main}
+CRITICAL - 2023-02-18 13:07:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, title, deskripsi, gambar, tipe, harga, stok FROM menu')
+ 3 APPPATH\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1JpYWNIUVdzNG1sZz09', [...], 'get')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 13:27:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(106): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 13:27:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (username , password , email , role )VALUE(\'dickyananta 17\' , \'dicky12345\' , \'ivan@gmail.com\' , \'Admin\' )0')
+ 2 APPPATH\Controllers\User.php(106): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 13:53:47 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 13:53:47 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'Admin\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 13:54:40 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 13:54:40 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'Admin\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 13:59:08 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 13:59:08 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'ivan12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'user\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:02:47 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, user...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, user...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, user...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(35): App\Models\userModel->user(0, Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:02:47 --> Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user_id, nama, username, password, kelamin, tanggal_lahir, telepon, email, alamat, status, role FROM user')
+ 2 APPPATH\Controllers\User.php(35): App\Models\userModel->user(0, [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:02:56 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, user...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, user...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, user...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(35): App\Models\userModel->user(0, Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:02:56 --> Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user_id, nama, username, password, kelamin, tanggal_lahir, telepon, email, alamat, status, role FROM user')
+ 2 APPPATH\Controllers\User.php(35): App\Models\userModel->user(0, [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:03:02 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, user...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, user...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, user...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(35): App\Models\userModel->user(0, Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:03:02 --> Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user_id, nama, username, password, kelamin, tanggal_lahir, telepon, email, alamat, status, role FROM user')
+ 2 APPPATH\Controllers\User.php(35): App\Models\userModel->user(0, [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:05:31 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, user...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, user...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, user...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(35): App\Models\userModel->user(0, Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:05:31 --> Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, user_id, nama, username, password, kelamin, tanggal_lahir, telepon, email, alamat, status, role FROM user')
+ 2 APPPATH\Controllers\User.php(35): App\Models\userModel->user(0, [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:06:10 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT id, nama...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, nama...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, nama...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, nama...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(35): App\Models\userModel->user(0, Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:06:10 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, nama, username, password, kelamin, tanggal_lahir, telepon, email, alamat, status, role FROM user')
+ 2 APPPATH\Controllers\User.php(35): App\Models\userModel->user(0, [...], 'get')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:07:19 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:07:19 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'user\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:08:39 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:08:39 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'user\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:08:47 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:08:47 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'user\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:08:52 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:08:52 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'user\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:08:55 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:08:55 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'user\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 14:13:46 --> Undefined property: CodeIgniter\View\View::$profileModel
+in APPPATH\Views\User\edituser_view.php on line 8.
+ 1 APPPATH\Views\User\edituser_view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$profileModel', 'APPPATH\\Views\\User\\edituser_view.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\edituser_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/edituser_view', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('/user/edituser_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 14:19:44 --> Undefined property: CodeIgniter\View\View::$profileModel
+in APPPATH\Views\User\edituser_view.php on line 11.
+ 1 APPPATH\Views\User\edituser_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$profileModel', 'APPPATH\\Views\\User\\edituser_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\edituser_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/edituser_view', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('/user/edituser_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:22:00 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:22:00 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama )VALUE(\'dicky ananta yudha\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:31:59 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:31:59 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'user\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:36:52 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:36:52 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'Admin\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:37:44 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:37:44 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'Admin\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 14:38:25 --> Cannot use [] for reading
+in APPPATH\Controllers\User.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:38:38 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:38:38 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'dicky ananta\' , \'dickyananta\' , \'dicky12345\' , \'lakilaki\' , \'14 oktober 2004\' , \'081229502605\' , \'dicky@gmail.com\' , \'krasak\' , \'aktif\' , \'Admin\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:39:25 --> mysqli_sql_exception: Unknown column 'username' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO pro...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(111): App\Models\profileModel->profile(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:39:25 --> Unknown column 'username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO profile (username )VALUE(\'dickyananta\' )')
+ 2 APPPATH\Controllers\User.php(111): App\Models\profileModel->profile(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 14:48:01 --> Undefined array key "user_id"
+in APPPATH\Controllers\User.php on line 111.
+ 1 APPPATH\Controllers\User.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Controllers\\User.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:52:44 --> mysqli_sql_exception: Unknown column 'response' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO pro...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(111): App\Models\profileModel->profile(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:52:44 --> Unknown column 'response' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO profile (response , response_message , last_insert_id )VALUE(\'1\' , \'Sucses To Insert Data.\' , \'27\' )')
+ 2 APPPATH\Controllers\User.php(111): App\Models\profileModel->profile(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:56:06 --> mysqli_sql_exception: Unknown column 'response' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO pro...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(111): App\Models\profileModel->profile(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:56:06 --> Unknown column 'response' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO profile (response , response_message , last_insert_id )VALUE(\'1\' , \'Sucses To Insert Data.\' , \'30\' )')
+ 2 APPPATH\Controllers\User.php(111): App\Models\profileModel->profile(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 14:56:48 --> mysqli_sql_exception: Unknown column 'response' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO pro...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(110): App\Models\profileModel->profile(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 14:56:48 --> Unknown column 'response' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO profile (response , response_message , last_insert_id )VALUE(\'1\' , \'Sucses To Insert Data.\' , \'31\' )')
+ 2 APPPATH\Controllers\User.php(110): App\Models\profileModel->profile(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 14:58:39 --> Array to string conversion
+in APPPATH\Controllers\User.php on line 111.
+ 1 APPPATH\Controllers\User.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\User.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 14:59:21 --> foreach() argument must be of type array|object, bool given
+in APPPATH\Models\profileModel.php on line 61.
+ 1 APPPATH\Models\profileModel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'APPPATH\\Models\\profileModel.php', 61)
+ 2 APPPATH\Controllers\User.php(111): App\Models\profileModel->profile(0, true, 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 15:00:05 --> foreach() argument must be of type array|object, bool given
+in APPPATH\Models\profileModel.php on line 61.
+ 1 APPPATH\Models\profileModel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'APPPATH\\Models\\profileModel.php', 61)
+ 2 APPPATH\Controllers\User.php(111): App\Models\profileModel->profile(0, true, 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:07:52 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:07:52 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username )VALUE(\'a\' , \'f\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:11:43 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:11:43 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username )VALUE(\'a\' , \'f\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:12:07 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:12:07 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username )VALUE(\'a\' , \'f\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:22:15 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:22:15 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'knsakdn\' , \'asdkklasn\' , \'aksndoojasoid\' , \'oasojo\' , \'oisjoiaj\' , \'josji\' , \'ojsoij\' , \'ojoij\' , \'ojoi\' , \'oijoi\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:22:38 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:22:38 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'knsakdn\' , \'asdkklasn\' , \'aksndoojasoid\' , \'oasojo\' , \'oisjoiaj\' , \'josji\' , \'ojsoij\' , \'ojoij\' , \'ojoi\' , \'oijoi\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:23:29 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:23:29 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'knsakdn\' , \'asdkklasn\' , \'aksndoojasoid\' , \'oasojo\' , \'oisjoiaj\' , \'josji\' , \'ojsoij\' , \'ojoij\' , \'ojoi\' , \'oijoi\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:23:38 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:23:38 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'knsakdn\' , \'asdkklasn\' , \'aksndoojasoid\' , \'oasojo\' , \'oisjoiaj\' , \'josji\' , \'ojsoij\' , \'ojoij\' , \'ojoi\' , \'oijoi\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:25:54 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:25:54 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama , username , password , kelamin , tanggal_lahir , telepon , email , alamat , status , role )VALUE(\'knsakdn\' , \'asdkklasn\' , \'aksndoojasoid\' , \'oasojo\' , \'oisjoiaj\' , \'josji\' , \'ojsoij\' , \'ojoij\' , \'ojoi\' , \'oijoi\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:26:11 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:26:11 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama )VALUE(\'df\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 15:26:11 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\User.php(109): App\Models\userModel->user(0, Array, 'post')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\User->edit()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 15:26:11 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\userModel.php(72): CodeIgniter\Database\BaseConnection->query('INSERT INTO user (nama )VALUE(\'df\' )')
+ 2 APPPATH\Controllers\User.php(109): App\Models\userModel->user(0, [...], 'post')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:04:16 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('eVlJZUtkeWJzc3JtNjVZZzVGenJ0UT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:04:26 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('eVlJZUtkeWJzc3JtNjVZZzVGenJ0UT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:04:33 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('eVlJZUtkeWJzc3JtNjVZZzVGenJ0UT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:07:51 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:11:24 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:11:40 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:18:35 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:18:46 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 16:18:55 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Profile.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 16:44:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dicky ananta yudha' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Profile.php(94): App\Models\profileModel->exists('dicky ananta yu...')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z...')
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 16:44:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dicky ananta yudha' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM profile WHERE nama= \'dicky ananta yudha')
+ 2 APPPATH\Controllers\Profile.php(94): App\Models\profileModel->exists('dicky ananta yudha')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 16:44:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dicky ananta yudha' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Profile.php(94): App\Models\profileModel->exists('dicky ananta yu...')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z...')
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 16:44:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dicky ananta yudha' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM profile WHERE nama= \'dicky ananta yudha')
+ 2 APPPATH\Controllers\Profile.php(94): App\Models\profileModel->exists('dicky ananta yudha')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-18 16:45:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dicky ananta  2007' at line 1 in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\profileModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Profile.php(94): App\Models\profileModel->exists('dicky ananta  2...')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z...')
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+CRITICAL - 2023-02-18 16:45:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''dicky ananta  2007' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\profileModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT * FROM profile WHERE nama= \'dicky ananta  2007')
+ 2 APPPATH\Controllers\Profile.php(94): App\Models\profileModel->exists('dicky ananta  2007')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Profile->edit('aTJhd0tCU1QxM2Z2dng5Q0phRTZFUT09')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 18:02:26 --> Undefined array key "user_id"
+in APPPATH\Views\User\user_view.php on line 29.
+ 1 APPPATH\Views\User\user_view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Views\\User\\user_view.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\user_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/user_view', [], true)
+ 5 APPPATH\Controllers\User.php(39): view('/user/user_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-18 18:02:54 --> Undefined array key "nama"
+in APPPATH\Views\User\user_view.php on line 29.
+ 1 APPPATH\Views\User\user_view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'APPPATH\\Views\\User\\user_view.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\user_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/user/user_view', [], true)
+ 5 APPPATH\Controllers\User.php(39): view('/user/user_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

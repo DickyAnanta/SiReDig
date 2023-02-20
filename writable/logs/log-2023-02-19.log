@@ -1,0 +1,159 @@
+ERROR - 2023-02-19 05:58:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'siredig', 3306, '', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#9 {main}
+CRITICAL - 2023-02-19 05:58:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, title, deskripsi, gambar, tipe, harga, stok FROM menu')
+ 3 APPPATH\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1JpYWNIUVdzNG1sZz09', [...], 'get')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 07:05:03 --> Invalid file: "login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Login.php(13): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 07:09:44 --> Invalid file: "login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Login.php(13): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 07:09:58 --> Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\Login.php(13): view('ROOTPATH\\public')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-19 07:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-19 07:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-19 07:13:33 --> syntax error, unexpected token ")", expecting variable or "{" or "$"
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-19 07:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-19 07:17:48 --> Undefined variable $session
+in APPPATH\Controllers\Login.php on line 13.
+ 1 APPPATH\Controllers\Login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Login.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 15:34:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'siredig', 3306, '', 0)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, titl...')
+#3 E:\Data Aplikasi\Xampp\htdocs\SiReDig\app\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1J...', Array, 'get')
+#4 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(934): App\Controllers\Menu->index()
+#5 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#6 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Data Aplikasi\Xampp\htdocs\SiReDig\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 E:\Data Aplikasi\Xampp\htdocs\SiReDig\system\Commands\Server\rewrite.php(47): require_once('E:\\Data Aplikas...')
+#9 {main}
+CRITICAL - 2023-02-19 15:34:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\menuModel.php(150): CodeIgniter\Database\BaseConnection->query('SELECT id, title, deskripsi, gambar, tipe, harga, stok FROM menu')
+ 3 APPPATH\Controllers\Menu.php(31): App\Models\menuModel->menu('Umhxc2ZDeHlpc1JpYWNIUVdzNG1sZz09', [...], 'get')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Menu->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 16:04:35 --> Class "App\Controllers\loginModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 16:04:39 --> Class "App\Controllers\loginModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 16:05:24 --> Class "App\Controllers\loginModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 16:08:15 --> Class "App\Models\loginModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 16:10:06 --> Class "App\Models\loginModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
