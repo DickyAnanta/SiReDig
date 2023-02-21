@@ -13,267 +13,67 @@ body {
 }
 
 /* navbar start */
-section {
-    margin-top: 8rem;
+.bar {
+    font-weight: 500;
+    color: #000;
+    margin-left: 3rem;
 }
 
-.navbar {
-    background-color: #00FF80;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99999;
-}
-
-.navbar img {
-    height: 2.5rem;
-    width: auto;
-}
-
-.navbar .dropdown-menu a {
-    background-color: var(--primary);
-    color: var(--tua);
-}
-
-.navbar .dropdown-menu a:hover {
-    background-color: var(--primary);
-}
-
-.navbar .dropdown-menu {
-    background-color: var(--primary);
-}
-
-.navbar .warna a {
-    font-weight: 700;
-    text-decoration: none;
-    color: aqua;
-}
-
-.navbar .login a {
-    border-radius: 5px;
-    border: 2px solid var(--putih);
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 700;
-}
-
-.navbar .NB {
-    line-height: 30px;
-    height: 30px;
-    position: relative;
-}
-
-.navbar .NB a,
-.navbar .dropdown a {
-    color: var(--putih);
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-
-.navbar .NB a:hover,
-.navbar .dropdown a:hover {
-    color: var(--tua);
-}
-
-.navbar .masuk {
-    color: var(--putih);
-    transition: 0.3s;
-}
-
-.navbar .masuk:hover {
-    color: var(--tua);
-    background-color: var(--putih);
-}
-
-.navbar .teks {
-    margin-right: 40px;
-    text-decoration: none;
+.bar:hover {
+    color: var(--primary);
 }
 
 /* navbar end */
 
-.jumbotron {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+/* login start */
+.login-box i {
+    color: #000;
+}
+
+.login-box img {
+    display: block;
+    padding: auto;
+    margin: auto;
+    margin-bottom: 3.5rem;
+}
+
+.login-box .card {
+    width: 25rem;
+    padding: 0rem 1rem;
+    border-radius: 25px;
+    margin-left: -1rem;
+}
+
+.login-box .card-body {
     background-color: transparent;
 }
 
-.jumbotron h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: var(--primary);
-}
-
-.jumbotron p {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.jumbotron .btn {
-    background-color: var(--primary);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 2px;
-    box-shadow: 1px 1px 2px rgba(107, 107, 107, 0.4);
-    padding-bottom: 2px;
-    font-size: 1rem;
-    color: var(--putih);
-    border-radius: 0;
-}
-
-.content-wrapper {
-    background-color: #fff;
-}
-
-.foto img {
-    float: right;
-    margin-top: 6rem;
-    height: 300px;
-    width: 300px;
-}
-
-/* makanan start */
-.makanan img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 23rem;
-    height: auto;
-    background-size: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 2px;
-}
-
-.makanan .card-body {
-    padding-right: 1rem;
-}
-
-.makanan2 img {
-    width: 9.5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.makanan2 a {
-    color: #000;
-    font-weight: 700;
-}
-
-.makanan2 a:hover {
-    color: var(--tua);
-}
-
-.makanan {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-.makanan2 {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.makanan h2 {
-    font-weight: 700;
-    color: var(--tua);
-    text-align: center;
-}
-
-.makanan2 p {
-    text-align: left;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #000;
+.login-box input {
+    width: 20.4rem;
+    height: 2rem;
     margin: 0;
-    margin-bottom: 0px;
-}
-
-.makanan p {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-    color: #000;
-    margin-bottom: 3rem;
-}
-
-.makanan h5 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #000;
-    margin: 0;
-}
-
-.makanan .btn {
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: var(--primary);
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 5px 10px;
-    background-color: transparent;
-    border: 1px solid #00FF80;
-    transition: 0.3s;
-    margin: 0;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    color: var(--putih);
-    background-color: var(--primary);
-}
-
-.makanan .col {
-    display: flex;
-    justify-content: center;
-}
-
-.makanan .card p {
-    text-align: left;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #000;
-    margin: 0;
-    margin-bottom: 0px;
-}
-
-.makanan .card,
-.makanan2 .card {
-    background-color: var(--putih);
-}
-
-.card-footer p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: var(--putih);
-    font-size: 1rem;
-    font-weight: 500;
     margin-bottom: 0;
+    border-radius: 5px;
+    border: 2px solid #f3f3f3;
+    font-size: 0.8rem;
 }
 
-.card-footer {
-    margin-top: 3rem;
-    background-color: var(--tua);
+.login-box p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
 }
 
-/* landingpage */
-.kepala {
-    /* height: 30%;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background-image: url(img/kk.jpg);
+.login-box .btn {
+    background-color: var(--primary);
+    padding: 4px 8.85rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 0.8rem;
 }
+
+/* login end */
 
 /* menu */
 .menu img {
@@ -375,141 +175,3 @@ section {
 }
 
 /* admin end */
-
-/* order start */
-.order {
-    margin-top: 4rem;
-}
-
-.order .card img {
-    width: 12rem;
-    height: auto;
-}
-
-.order .card span {
-    float: right;
-}
-
-.order .card h5 {
-    font-size: 1rem;
-    color: #000;
-    font-weight: 600;
-}
-
-.order .card p {
-    font-size: 0.8rem;
-    color: #5c5c5c;
-    font-weight: 400;
-}
-
-.order .card {
-    height: 20rem;
-    transition: 0.3s;
-}
-
-.order .card:hover {
-    border: 1px solid #000;
-}
-
-.order .card a {
-    text-align: center;
-    background-color: var(--primary);
-    border-radius: 10px;
-    font-weight: 500;
-    width: 10rem;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
-.order .cart {
-    height: 100%;
-    width: 25rem;
-    background-color: #00d169;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    padding-top: 7rem;
-}
-
-.order .cart h3 {
-    font-size: 1.5rem;
-    color: #000;
-}
-
-.cart p {
-    float: left;
-    font-size: 1rem;
-    color: #000;
-    font-weight: 600;
-}
-
-.right {
-    float: right;
-}
-
-.order .wrap span {
-    float: right;
-    margin-left: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #eaeaea;
-}
-
-.order button {
-    font-size: 1rem;
-    color: #000;
-    background-color: var(--putih);
-    border: 0;
-    padding: 1px 10px;
-    border-radius: 5px;
-}
-
-.wrap {
-    padding: 0 1rem;
-}
-
-.order .card-body {}
-
-.order .card a:hover {
-    background-color: #00d169;
-}
-
-.order ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-.order li {
-    text-decoration: none;
-    float: left;
-    margin-left: 1rem;
-}
-
-.content-header {
-    margin-top: 5rem;
-}
-
-.card-header {
-    border-radius: 0;
-    background-color: rgb(7, 7, 7);
-    color: var(--putih);
-}
-
-/* order end */
-
-/* media querries */
-/* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
-
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {}
-
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
-
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
-
-/* // Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width */

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+<<<<<<< HEAD
 use App\Controllers\BaseController;
 use App\Models\userModel;
 
@@ -45,4 +46,12 @@ class Login extends BaseController
     $session->destroy();
     return redirect()->to('/login');
   }
+=======
+class Login extends BaseController
+{
+    public function index()
+    {
+        return view('/login/login_view');
+    }
+>>>>>>> 3f95e3b82e37b4e5eb95cda882480d1ca7fc6439
 }
