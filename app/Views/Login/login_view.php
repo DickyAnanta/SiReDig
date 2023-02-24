@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in</title>
+  <title>Siredig Login</title>
+
+  <link rel="icon" href="/assets/img/icon.png">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -23,16 +25,19 @@
     <!-- /.login-logo -->
     <div class="card">
       <div class="card-body login-card-body">
-        <a href=""><i class="fas fa-arrow-left"></i></a>
-        <form action="index3.html" method="post">
+        <a href="/menu/index"><i class="fas fa-arrow-left"></i></a>
+        <?php if (session()->getFlashdata('msg')) : ?>
+          <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+        <?php endif; ?>
+        <form action="/login/auth" method="post">
           <img src="/assets/img/loogo.png" alt="">
           <div class="form-group">
-            <p for="exampleInputEmail1">Email address</p>
-            <input type="email" class="" placeholder="masukkan username" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <p for="username">Username</p>
+            <input type="text" class="" placeholder="masukkan username" id="username" name="username">
           </div>
           <div class="form-group">
-            <p for="exampleInputPassword1">Password</p>
-            <input type="password" class="" placeholder="masukkan password" id="exampleInputPassword1">
+            <p for="password">Password</p>
+            <input type="password" class="" placeholder="masukkan password" id="password" name="password">
           </div>
           <div class="row">
             <!-- /.col -->

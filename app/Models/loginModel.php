@@ -6,6 +6,7 @@ use CodeIgniter\Model;
 
 class loginModel extends Model
 {
-  protected $tabellogin = 'user';
+  protected $table = 'user';
   protected $primary_column = 'username';
+  protected $allowedFields = ['username', 'password'];
 }

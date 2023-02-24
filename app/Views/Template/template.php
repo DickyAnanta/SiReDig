@@ -63,18 +63,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item dropdown">
                 <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="bar dropdown-toggle">Admin</a>
                 <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                  <li><a href="#" class="dropdown-item">List User</a></li>
-                  <li><a href="#" class="dropdown-item">Form User</a></li>
+                  <li><a href="/user/index" class="dropdown-item">List User</a></li>
+                  <li><a href="/user/edit" class="dropdown-item">Form User</a></li>
 
                   <li class="dropdown-divider"></li>
 
-                  <li><a href="#" class="dropdown-item">List Menu</a></li>
-                  <li><a href="#" class="dropdown-item">Form Menu</a></li>
+                  <li><a href="/menu/index" class="dropdown-item">List Menu</a></li>
+                  <li><a href="/menu/edit" class="dropdown-item">Form Menu</a></li>
 
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="/login/login_view.php" class="bar">Masuk</a>
+                <a href="/login/index" class="bar">Masuk</a>
               </li>
             </ul>
         </div>

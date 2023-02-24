@@ -91,7 +91,7 @@ class profileModel extends Model
           }
         }
 
-        $sql = "INSERT INTO" . $this->tableprofile . "SET" . substr($patch_column, 0, 2) . "WHERE id = " . $id;
+        $sql = "INSERT INTO" . $this->tableprofile . "SET" . substr($patch_column, 0, 2) . "WHERE user_id = " . $id;
         if ($this->db->query($sql)) {
           $ret = [
             "response" => true,
@@ -118,7 +118,7 @@ class profileModel extends Model
             $patch_column .= $key . " = '" . $value . "', ";
           }
         }
-        $sql = "UPDATE " . $this->tableprofile . " SET " . substr($patch_column, 0, -2) . " WHERE id = " . $id;
+        $sql = "UPDATE " . $this->tableprofile . " SET " . substr($patch_column, 0, -2) . " WHERE user_id = " . $id;
         if ($this->db->query($sql)) {
           $ret = [
             "response" => true,
@@ -190,7 +190,7 @@ class profileModel extends Model
       // } elseif ($datas == 2) {
       //   $query .= "DELETE FROM" . $this->tableprofile . "WHERE id = " . decrypt_url($id) ;
       // }
-      $query .=   " DELETE FROM " . $this->tableprofile . " WHERE id = " . decrypt_url($id);
+      $query .=   " DELETE FROM " . $this->tableprofile . " WHERE user_id = " . decrypt_url($id);
 
       if ($this->db->query($query)) {
         $ret = true;

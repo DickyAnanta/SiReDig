@@ -8,6 +8,7 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
+                <th scope="col">Nama</th>
                 <th scope="col">Username</th>
                 <th scope="col">Password</th>
                 <th scope="col">Email</th>
@@ -20,6 +21,7 @@
         <?php foreach ($data as $key => $value) : ?>
             <tr>
                 <th scope="row"><?= $i++; ?></th>
+                <td><?= $value['nama'] ?></td>
                 <td><?= $value['username'] ?></td>
                 <td><?= $value['password'] ?></td>
                 <td><?= $value['email'] ?></td>

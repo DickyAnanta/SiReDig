@@ -35,7 +35,8 @@ class userModel extends Model
     $ret = false;
     if (!empty($id)) {
       $query = "SELECT * FROM " . $this->tableuser;
-      $query .= " WHERE id = " . decrypt_url($id);
+      $query .= " INNER JOIN profile ON profile.user_id = user.id";
+      $query .= " WHERE profile.id & user.id = " . decrypt_url($id);
       $data = $this->db->query($query)->getRowArray();
       if (!empty($data)) {
         $ret = $data;
@@ -69,8 +70,8 @@ class userModel extends Model
       $values = "(" . substr($values, 0, -2) . ")";
 
       $sql = "INSERT INTO " . $this->tableuser . " " . $colum . "VALUE" . $values;
-      $this->join('profile', 'profile.IDprofile=nama.IDprofile')
-        ->get()->getResultArray();
+      // $this->join('profile', 'profile.IDprofile=nama.IDprofile')
+      //   ->get()->getResultArray();
       if ($this->db->query($sql)) {
         $ret = [
           "response" => true,
@@ -143,10 +144,12 @@ class userModel extends Model
 
       $query = '';
       $query .= "SELECT " . @$datas["select"] . " FROM " . $this->tableuser;
+      $query .= " INNER JOIN profile ON profile.user_id = user.id";
       if (!empty($this->whereclause_system())) {
         $query .= " WHERE ";
       }
       $query .= $this->whereclause_system();
+      // dd($query);
 
       if (@$datas["getreturn"] == "data") {
         $all_record = $this->db->query($query)->getNumRows();
