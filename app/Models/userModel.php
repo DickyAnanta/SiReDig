@@ -69,6 +69,13 @@ class userModel extends Model
       $colum = "(" . substr($colum, 0, -2) . ")";
       $values = "(" . substr($values, 0, -2) . ")";
 
+
+      // if (!empty($datas['password'])) {
+      //   $password = password_hash($datas['password'], PASSWORD_DEFAULT);
+      //   return $password;
+      // } 
+
+
       $sql = "INSERT INTO " . $this->tableuser . " " . $colum . "VALUE" . $values;
       // $this->join('profile', 'profile.IDprofile=nama.IDprofile')
       //   ->get()->getResultArray();

@@ -23,12 +23,10 @@ class Login extends Controller
         $model = new loginModel();
         $username = $this->loginModel->request->getVar('username');
         $password = $this->loginModel->request->getVar('password');
-        // dd($password);
         $data = $model->where('username', $username)->first();
         if ($data) {
             $pass = $data['password'];
             $verify_pass = password_verify($password, $pass);
-            // dd($verify_pass);
             if ($verify_pass) {
                 $ses_data = [
                     'username'     => $data['username'],

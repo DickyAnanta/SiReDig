@@ -10,7 +10,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Nama</th>
                 <th scope="col">Username</th>
-                <th scope="col">Password</th>
+                <th scope="col">Telepon</th>
                 <th scope="col">Email</th>
                 <th scope="col">Status</th>
                 <th scope="col">Role</th>
@@ -23,7 +23,7 @@
                 <th scope="row"><?= $i++; ?></th>
                 <td><?= $value['nama'] ?></td>
                 <td><?= $value['username'] ?></td>
-                <td><?= $value['password'] ?></td>
+                <td><?= $value['telepon'] ?></td>
                 <td><?= $value['email'] ?></td>
                 <td><?= $value['status'] ?></td>
                 <td><?= $value['role'] ?></td>

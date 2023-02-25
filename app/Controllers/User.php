@@ -94,6 +94,7 @@ class User extends BaseController
     // dd($id);
     $ret = [];
     $dt_post = @$this->request->getPost();
+    // dd($dt_post);
     if (!empty($dt_post)) {
       $exists = $this->userModel->exists($dt_post['username']);
       if (empty($id)) {
@@ -107,9 +108,10 @@ class User extends BaseController
             'redirect_to' => ''
           ];
         } else {
+          $password = password_hash($dt_post['password'], PASSWORD_DEFAULT);
           $data = [
             'username' => $dt_post['username'],
-            'password' => $dt_post['password'],
+            'password' => $password,
             'email' => $dt_post['email'],
             'status' => 0,
             'role' => $dt_post['role']
@@ -146,9 +148,6 @@ class User extends BaseController
           }
         }
       } else {
-        // if () {
-        //   # code...
-        // }
         if (decrypt_url($id) == @$exists['id'] || ($exists == false)) {
           $data = [
             'username' => $dt_post['username'],
