@@ -5,8 +5,13 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\loginModel;
 
-class Login extends BaseController
+class Login extends Controller
 {
+    protected $loginModel;
+    public function __construct()
+    {
+        $this->loginModel = new loginModel();
+    }
     public function index()
     {
         return view('/login/login_view');
