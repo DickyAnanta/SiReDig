@@ -55,33 +55,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Left navbar links -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="index_admin.php" class="bar">Beranda</a>
+                <a href="/beranda" class="bar">Beranda</a>
               </li>
               <li class="nav-item">
-                <a href="menu_admin.php" class="bar ml-5">Menu</a>
+                <a href="/menu/tampilan" class="bar ml-5">Menu</a>
               </li>
               <li class="nav-item">
-                <a href="order_admin.php" class="bar ml-5">Order</a>
+                <a href="" class="bar ml-5">Order</a>
               </li>
               <li class="nav-item dropdown">
                 <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="bar ml-5 dropdown-toggle">Admin</a>
                 <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                  <li><a href="daftarpengguna.php" class="dropdown-item">List User</a></li>
-                  <li><a href="formuser.php" class="dropdown-item">Form User</a></li>
+                  <li><a href="/user" class="dropdown-item">List User</a></li>
+                  <li><a href="/user/edit" class="dropdown-item">Form User</a></li>
 
                   <li class="dropdown-divider"></li>
 
-                  <li><a href="daftarmenu_view.php" class="dropdown-item">List Menu</a></li>
-                  <li><a href="formmenu.php" class="dropdown-item">Form Menu</a></li>
+                  <li><a href="/menu" class="dropdown-item">List Menu</a></li>
+                  <li><a href="/menu/edit" class="dropdown-item">Form Menu</a></li>
 
                 </ul>
               </li>
-              <li class="profile">
+              <li class="profile"">
                 <h3>Admin1</h3>
                 <p>1232</p>
               </li>
-              <li class="nav-item">
-                <a href="../index.php" class="masuk ml-5">Keluar</a>
+              <li class=" nav-item">
+                <a href="/berandauser" class="masuk ml-5">Keluar</a>
               </li>
             </ul>
         </div>

@@ -5,13 +5,13 @@
 <div class="content mt-5">
     <div class="container">
         <div class="container maindua">
-            <a href="menu.php"><i class="fas fa-arrow-left"></i></a>
+            <a href="/menuuser"><i class="fas fa-arrow-left"></i></a>
             <div class="row">
                 <div class="col">
-                    <img src="../img/burgerspesialview.png" alt="">
+                    <img src="/assets/img/" alt="">
                 </div>
                 <div class="col-4">
-                    <h2>Burger Special</h2>
+                    <h2></h2>
                     <p>Ini merupakan varian yang paling diminati masyarakat Indonesia.</p>
                     <h3>Jumlah <span>-1+</span></h3>
                     <a href="order.php"><button>Order Sekarang</button></a>

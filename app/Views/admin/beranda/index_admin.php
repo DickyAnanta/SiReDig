@@ -14,7 +14,7 @@
         <a href="menu_admin.php" class="btn">Mulai</a>
       </div>
       <div class="col" data-aos="fade-left">
-        <img src="../img/Group 100.png" alt="">
+        <img src="/assets/img/" alt="">
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
     <div class="row">
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/a.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Burger Special</h5>
             <p class="card-text">Rp25.000,00</p>
@@ -42,7 +42,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/nasigoreng.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Nasi Goreng</h5>
             <p class="card-text">Rp15.000,00</p>
@@ -52,7 +52,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/pasta.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class=" card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Pasta</h5>
             <p class="card-text">Rp20.000,00</p>
@@ -62,7 +62,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/pizza.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class=" card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Pizza</h5>
             <p class="card-text">Rp50.000,00</p>
@@ -72,7 +72,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/seafood.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Seafood</h5>
             <p class="card-text">Rp30.000,00</p>
@@ -93,7 +93,7 @@
     <div class="row">
       <div class="col">
         <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-          <img src="../img/bull.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class=" card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Bullgogi</h5>
             <p class="card-text">Rp15.000,00</p>
@@ -103,7 +103,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/coffelatte.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Coffe Latte</h5>
             <p class="card-text">Rp15.000,00</p>
@@ -113,7 +113,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/macha.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class=" card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Macha Latte</h5>
             <p class="card-text">Rp10.000,00</p>
@@ -123,7 +123,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/chocolatte.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Chocolatte</h5>
             <p class="card-text">Rp15.000,00</p>
@@ -133,7 +133,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/seafood.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Lemon Tea</h5>
             <p class="card-text">Rp8.000,00</p>
@@ -155,7 +155,7 @@
     <div class="row">
       <div class="col">
         <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-          <img src="../img/kentanggoreng.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Kentang Goreng</h5>
             <p class="card-text">Rp13.000,00</p>
@@ -165,7 +165,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/churos.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Churros</h5>
             <p class="card-text">Rp10.000,00</p>
@@ -175,7 +175,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/makaroni.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Makaroni Schotel</h5>
             <p class="card-text">Rp15.000,00</p>
@@ -185,7 +185,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/kue choco late.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Chocolate Cake</h5>
             <p class="card-text">Rp25.000,00</p>
@@ -195,7 +195,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/Mozzarela.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Mozarella Stick</h5>
             <p class="card-text">Rp18.000,00</p>
@@ -217,7 +217,7 @@
     <div class="row">
       <div class="col">
         <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-          <img src="../img/a.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class=" card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Burger Special</h5>
             <p class="card-text">Rp25.000,00</p>
@@ -227,7 +227,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/nasigoreng.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Nasi Goreng</h5>
             <p class="card-text">Rp15.000,00</p>
@@ -237,7 +237,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/pasta.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class=" card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Pasta</h5>
             <p class="card-text">Rp20.000,00</p>
@@ -247,7 +247,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/pizza.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class=" card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Pizza</h5>
             <p class="card-text">Rp50.000,00</p>
@@ -257,7 +257,7 @@
       </div>
       <div class="col">
         <div class="card" style="width: 11.5rem;">
-          <img src="../img/seafood.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Seafood</h5>
             <p class="card-text">Rp30.000,00</p>

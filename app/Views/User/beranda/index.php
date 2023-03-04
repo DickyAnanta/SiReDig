@@ -2,41 +2,6 @@
 
 <?= $this->Section('content') ?>
 
-<!-- Navbar -->
-<nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
-  <div class="container">
-    <a href="#" class="navbar-brand">
-      <img src="img/loogo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
-    </a>
-
-    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse order-3" id="navbarCollapse">
-
-      <!-- Right navbar links -->
-      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-        <!-- Left navbar links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="index.php" class="bar">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a href="user/menu.php" class="bar ml-5">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a href="user/order.php" class="bar ml-5">Order</a>
-          </li>
-          <li class="nav-item">
-            <a href="user/masuk.php" class="masuk ml-5">Masuk</a>
-          </li>
-        </ul>
-    </div>
-</nav>
-<!-- /.navbar -->
-
-
 <div class="content mt-5">
   <div class="container">
 
@@ -46,10 +11,10 @@
         <h2>&EAT FOOD</h2>
         <p><span>Eat good, live good, and eat good.</span><br>
           Nek mangan gausah miker<br> dunyo, marai ga nikmat.</p>
-        <a href="menu.php" class="btn">Mulai</a>
+        <a href="/menuuser" class="btn">Mulai</a>
       </div>
-      <div class="col" data-aos="fade-left">
-        <img src="img/Group 100.png" alt="">
+      <div clas="col" data-aos="fade-left">
+        <img src="/assets/img/Group 100.png" alt="">
       </div>
     </div>
   </div>
@@ -64,10 +29,11 @@
         <h3 class="judul">Makanan</h3>
       </div>
     </div>
+
     <div class="row">
       <div class="col">
         <div class="card index" style="width: 11.5rem;">
-          <img src="img/a.png" class="card-img-top" alt="...">
+          <img src="/assets/img/" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-text">Burger Special</h5>
             <p class="card-text">Rp25.000,00</p>

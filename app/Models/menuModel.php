@@ -149,6 +149,7 @@ class menuModel extends Model
       if (@$datas["getreturn"] == "data") {
         $all_record = $this->db->query($query)->getNumRows();
       }
+      // dd($datas);
 
       if (!empty($datas["whereclause"])) {
         if (empty($this->whereclause_system())) {

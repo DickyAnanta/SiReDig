@@ -36,7 +36,7 @@ class User extends BaseController
     if (!empty($alert['alert'])) {
       $ret['alert'] = $alert['alert'];
     }
-    return view('/user/user_view', $ret);
+    return view('/admin/user/listuser_view', $ret);
   }
 
   public function delete($id)
@@ -94,8 +94,8 @@ class User extends BaseController
     // dd($id);
     $ret = [];
     $dt_post = @$this->request->getPost();
-    // dd($dt_post);
     if (!empty($dt_post)) {
+      // dd($dt_post);
       $exists = $this->userModel->exists($dt_post['username']);
       if (empty($id)) {
         if ($exists) {
@@ -116,7 +116,6 @@ class User extends BaseController
             'status' => 0,
             'role' => $dt_post['role']
           ];
-          // dd($data);
           $sv_data = @$this->userModel->user(0, $data, "post");
           if ($sv_data['response']) {
             $data = [
@@ -210,6 +209,6 @@ class User extends BaseController
       $ret['data'] = @$data;
     }
 
-    return view('/user/edituser_view', $ret);
+    return view('/admin/user/formuser', $ret);
   }
 }

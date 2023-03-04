@@ -13,6 +13,25 @@ class Menu extends BaseController
     $this->menuModel = new MenuModel();
   }
 
+  public function tampilan()
+  {
+    $datas = [
+      "select" => "id, title, deskripsi, gambar, tipe, harga, stok",
+      "getreturn" => "data",
+      "order_by" => [
+        "column" => "",
+        "order" => "DESC"
+      ],
+      "limit" => [
+        "lenght" => -1,
+        "start" => ""
+      ],
+      "whereclause" => ""
+    ];
+    $ret = $this->menuModel->menu(encrypt_url(1), $datas, "get");
+    return view('/admin/menu/menu_admin', $ret);
+  }
+
   public function index($alert = '')
   {
     $datas = [
@@ -32,7 +51,7 @@ class Menu extends BaseController
     if (!empty($alert['alert'])) {
       $ret['alert'] = $alert['alert'];
     }
-    return view('/menu/menu_view', $ret);
+    return view('/admin/menu/listmenu_view', $ret);
   }
 
   public function delete($id)
@@ -106,7 +125,7 @@ class Menu extends BaseController
           $gambar->move(WRITEPATH . '../public/assets/img/');
           $data = [
             'title' => $dt_post['title'],
-            'gambar' => $gambar->getName(),
+            'gambar' => $gambar->getname(),
             'deskripsi' => $dt_post['deskripsi'],
             'tipe' => $dt_post['tipe'],
             'harga' => $dt_post['harga'],
@@ -135,9 +154,12 @@ class Menu extends BaseController
         }
       } else {
         if ((decrypt_url($id) == @$exists['id']) || ($exists == false)) {
+          if (empty($gambar->getname())) {
+          }
+          $gambar->move(WRITEPATH . '../public/assets/img/');
           $data = [
             'title' => $dt_post['title'],
-            'gambar' => $gambar,
+            'gambar' => $gambar->getname(),
             'deskripsi' => $dt_post['deskripsi'],
             'tipe' => $dt_post['tipe'],
             'harga' => $dt_post['harga'],
@@ -188,6 +210,6 @@ class Menu extends BaseController
       $ret['data'] = @$data;
     }
 
-    return view('/menu/editmenu_view', $ret);
+    return view('/admin/menu/editmenu_view', $ret);
   }
 }

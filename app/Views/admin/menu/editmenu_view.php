@@ -1,4 +1,4 @@
-<?= $this->extend('Template/template.php') ?>
+<?= $this->extend('Template/admin/template.php') ?>
 
 <?= $this->Section('content') ?>
 
@@ -43,7 +43,7 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <form method="post" enctype="multipart/form-data">
+              <form action="" method="post" enctype="multipart/form-data">
                 <div class="row">
                   <div class="col-sm-4 gambar">
                     <div class="form-group-sx">

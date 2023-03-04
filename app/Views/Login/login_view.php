@@ -25,7 +25,7 @@
     <!-- /.login-logo -->
     <div class="card">
       <div class="card-body login-card-body">
-        <a href="/menu/index"><i class="fas fa-arrow-left"></i></a>
+        <a href="/berandauser"><i class="fas fa-arrow-left"></i></a>
         <?php if (session()->getFlashdata('msg')) : ?>
           <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
         <?php endif; ?>
