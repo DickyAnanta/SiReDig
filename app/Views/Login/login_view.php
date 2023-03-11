@@ -2,63 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Siredig Login</title>
-
-  <link rel="icon" href="/assets/img/icon.png">
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="/assets/plugins/fontawesome-free/css/all.min.css">
-  <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="/assets/adminlte/css/adminlte.min.css">
-  <!-- css saya -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/login.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
-<body class="hold-transition login-page">
-  <div class="login-box">
-    <!-- /.login-logo -->
-    <div class="card">
-      <div class="card-body login-card-body">
-        <a href="/berandauser"><i class="fas fa-arrow-left"></i></a>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <img src="/assets/img/loogo.png" data-aos="fade-down" alt="" class="mx-auto">
+      <form action="/login/auth" method="post">
+        <h2 class="mb-3" data-aos="fade-right" class="text-center">Login</h2>
         <?php if (session()->getFlashdata('msg')) : ?>
           <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
         <?php endif; ?>
-        <form action="/login/auth" method="post">
-          <img src="/assets/img/loogo.png" alt="">
-          <div class="form-group">
-            <p for="username">Username</p>
-            <input type="text" class="" placeholder="masukkan username" id="username" name="username">
-          </div>
-          <div class="form-group">
-            <p for="password">Password</p>
-            <input type="password" class="" placeholder="masukkan password" id="password" name="password">
-          </div>
-          <div class="row">
-            <!-- /.col -->
-            <div class="col-4">
-              <button type="submit" class="btn">Masuk</button>
-            </div>
-            <!-- /.col -->
-          </div>
-        </form>
-      </div>
-      <!-- /.login-card-body -->
+        <div class="form-group mb-1" data-aos="fade-right" data-aos-delay="100">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Masukkan Username" class="form-control" id="username" name="username" autofocus>
+        </div>
+        <div class="form-group" data-aos="fade-right" data-aos-delay="200">
+          <label for="password">Password</label>
+          <input type="password" placeholder="Masukkan Password" class="form-control" name="password" id="password">
+        </div>
+        <button type="submit" data-aos="fade-right" data-aos-delay="300" class="btn btn-success w-100">Masuk</button>
+        <a href="/berandauser" data-aos="fade-right" data-aos-delay="400" class="btn btn-warning mt-2 w-100 text-white">Kembali Ke Beranda</a>
+      </form>
     </div>
   </div>
-  <!-- /.login-box -->
+  </div>
 
-  <!-- jQuery -->
-  <script src="/assets/plugins/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
-  <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="/assets/adminlte/js/adminlte.min.js"></script>
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      once: true,
+    });
+  </script>
 </body>
 
 </html>

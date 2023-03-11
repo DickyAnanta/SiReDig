@@ -109,6 +109,7 @@ class Menu extends BaseController
     $ret = [];
     $dt_post = @$this->request->getPost();
     $gambar = @$this->request->getFile('gambar');
+    // dd($gambar->getname());
     if (!empty($dt_post)) {
       $exists = $this->menuModel->exists($dt_post['title']);
       if (empty($id)) {
@@ -155,16 +156,25 @@ class Menu extends BaseController
       } else {
         if ((decrypt_url($id) == @$exists['id']) || ($exists == false)) {
           if (empty($gambar->getname())) {
+            $data = [
+              'title' => $dt_post['title'],
+              'gambar' => '',
+              'deskripsi' => $dt_post['deskripsi'],
+              'tipe' => $dt_post['tipe'],
+              'harga' => $dt_post['harga'],
+              'stok' => $dt_post['stok'],
+            ];
+          } else {
+            $gambar->move(WRITEPATH . '../public/assets/img/');
+            $data = [
+              'title' => $dt_post['title'],
+              'gambar' => $gambar->getname(),
+              'deskripsi' => $dt_post['deskripsi'],
+              'tipe' => $dt_post['tipe'],
+              'harga' => $dt_post['harga'],
+              'stok' => $dt_post['stok'],
+            ];
           }
-          $gambar->move(WRITEPATH . '../public/assets/img/');
-          $data = [
-            'title' => $dt_post['title'],
-            'gambar' => $gambar->getname(),
-            'deskripsi' => $dt_post['deskripsi'],
-            'tipe' => $dt_post['tipe'],
-            'harga' => $dt_post['harga'],
-            'stok' => $dt_post['stok'],
-          ];
           $sv_data = $this->menuModel->menu($id, $data, "patch");
           if ($sv_data['response']) {
             $ret['alert'] = [

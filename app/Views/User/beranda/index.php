@@ -2,273 +2,85 @@
 
 <?= $this->Section('content') ?>
 
-<div class="content mt-5">
+<section class="beranda pt-5 mb-5">
   <div class="container">
 
-    <div class="row header">
-      <div class="col" data-aos="fade-right">
+    <!-- header -->
+    <div class="row header mt-2 p-4 bg-light rounded">
+      <div class="col mt-3" data-aos="fade-up">
         <h1><span>FRESH</span> FOOD</h1>
         <h2>&EAT FOOD</h2>
         <p><span>Eat good, live good, and eat good.</span><br>
           Nek mangan gausah miker<br> dunyo, marai ga nikmat.</p>
-        <a href="/menuuser" class="btn">Mulai</a>
+        <a href="menu.php" class="btn btn-sm bg-success shadow">Menu</a>
       </div>
-      <div clas="col" data-aos="fade-left">
+      <div class="col" data-aos="fade-up">
         <img src="/assets/img/Group 100.png" alt="">
       </div>
     </div>
+
+    <!-- menu -->
+    <div class="row menu" id="makanan">
+      <div class="col-12">
+        <!-- paket -->
+        <div class="konten mt-5">
+          <h3 class="mt-2">Rekomendasi <span class="float-right"><a class="text-success" href="menuuser">Lihat Semua<i class="ml-2 fas fa-chevron-right"></i>
+              </a></span></h3>
+          <div class="sec">
+            <div class="box shadow-sm" data-aos="flip-left">
+              <img src="/assets/img/Paket1.png" alt="">
+              <h4>Paket 1</h4>
+              <p class="d-flex justify-content-between pl-2 pr-2">RP30.000<span>Stok 5</span></p>
+              <a class="btn btn-sm btn-success" href="user/order.php">Order</a>
+            </div>
+            <div class="box shadow-sm" data-aos="flip-left" data-aos-delay="100">
+              <img src="/assets/img/Paket2.png" alt="">
+              <h4>Paket 2</h4>
+              <p class="d-flex justify-content-between pl-2 pr-2">RP60.000<span>Stok 5</span></p>
+              <a class="btn btn-sm btn-success" href="user/order.php">Order</a>
+            </div>
+            <div class="box shadow-sm" data-aos="flip-left" data-aos-delay="200">
+              <img src="/assets/img/paket3.png" alt="">
+              <h4>Paket 3</h4>
+              <p class="d-flex justify-content-between pl-2 pr-2">RP45.000<span>Stok 5</span></p>
+              <a class="btn btn-sm btn-success" href="user/order.php">Order</a>
+            </div>
+            <div class="box shadow-sm" data-aos="flip-left" data-aos-delay="300">
+              <img src="/assets/img/paket3.png" alt="">
+              <h4>Paket 3</h4>
+              <p class="d-flex justify-content-between pl-2 pr-2">RP45.000<span>Stok 5</span></p>
+              <a class="btn btn-sm btn-success" href="user/order.php">Order</a>
+            </div>
+            <div class="box shadow-sm" data-aos="flip-left" data-aos-delay="300">
+              <img src="/assets/img/Paket4.png" alt="">
+              <h4>Paket 4</h4>
+              <p class="d-flex justify-content-between pl-2 pr-2">RP25.000<span>Stok 5</span></p>
+              <a class="btn btn-sm btn-success" href="user/order.php">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- jumbroton -->
+        <div class="jumbotron bg-white box mt-5 p-3">
+          <div class="row">
+            <div class="col" data-aos="fade-up">
+              <img style="width: 300px;" src="/assets/img/burgerspesialview.png" alt="">
+            </div>
+            <div class="col pt-3" data-aos="fade-up">
+              <h2>Pilih Makanan Favoritmu</h2>
+              <p class="pt-4 pb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, accusantium sint laboriosam repellendus quod blanditiis dolore ipsa tempore eius ut.</p>
+              <a class="btn btn-sm btn-success shadow" href="">Pilih Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="container main">
-    <div class="text-center head">
-      <div class="col" data-aos="zoom-in-up">
-        <h2>Rekomendasi</h2>
-        <P class="text-center mt-5 mb-2">Makanan Favoritmu</P>
-      </div>
-      <div class="col" data-aos="fade-right">
-        <h3 class="judul">Makanan</h3>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="/assets/img/" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Burger Special</h5>
-            <p class="card-text">Rp25.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/nasigoreng.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Nasi Goreng</h5>
-            <p class="card-text">Rp15.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/pasta.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Pasta</h5>
-            <p class="card-text">Rp20.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/pizza.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Pizza</h5>
-            <p class="card-text">Rp50.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/seafood.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Seafood</h5>
-            <p class="card-text">Rp30.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center head">
-      <div class="col" data-aos="zoom-in-up">
-        <P class="text-center mt-5 mb-2">Minuman Favoritmu</P>
-      </div>
-      <div class="col" data-aos="fade-right">
-        <h3 class="juduldua">Minuman</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;" data-aos="flip-left">
-          <img src="img/bull.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Bullgogi</h5>
-            <p class="card-text">Rp15.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/coffelatte.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Coffe Latte</h5>
-            <p class="card-text">Rp15.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/macha.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Macha Latte</h5>
-            <p class="card-text">Rp10.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/chocolatte.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Chocolatte</h5>
-            <p class="card-text">Rp15.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/seafood.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Lemon Tea</h5>
-            <p class="card-text">Rp8.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="text-center head">
-      <div class="col" data-aos="zoom-in-up">
-        <P class="text-center mt-5 mb-2">Cemilan Favoritmu</P>
-      </div>
-      <div class="col" data-aos="fade-right">
-        <h3 class="juduldua">Cemilan</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;" data-aos="flip-left">
-          <img src="img/kentanggoreng.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Kentang Goreng</h5>
-            <p class="card-text">Rp13.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/churos.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Churros</h5>
-            <p class="card-text">Rp10.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/makaroni.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Makaroni Schotel</h5>
-            <p class="card-text">Rp15.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/kue choco late.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Chocolate Cake</h5>
-            <p class="card-text">Rp25.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/Mozzarela.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Mozarella Stick</h5>
-            <p class="card-text">Rp18.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="text-center head">
-      <div class="col" data-aos="zoom-in-up">
-        <P class="text-center mt-5 mb-2">Paket Favoritmu</P>
-      </div>
-      <div class="col" data-aos="fade-right">
-        <h3 class="juduldua">Paket</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;" data-aos="flip-left">
-          <img src="img/a.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Burger Special</h5>
-            <p class="card-text">Rp25.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/nasigoreng.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Nasi Goreng</h5>
-            <p class="card-text">Rp15.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/pasta.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Pasta</h5>
-            <p class="card-text">Rp20.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/pizza.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Pizza</h5>
-            <p class="card-text">Rp50.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card index" style="width: 11.5rem;">
-          <img src="img/seafood.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-text">Seafood</h5>
-            <p class="card-text">Rp30.000,00</p>
-            <a href="viewproduk.php" class="btn mt-2">Order</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</section>
+<div class="card-footer bg-dark text-muted text-center p-3">
+  <p class="">Copyright@TeamTecwiz</p>
 </div>
-</div>
+
 
 <?= $this->endSection() ?>

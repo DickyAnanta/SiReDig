@@ -2,89 +2,83 @@
 
 <?= $this->Section('content') ?>
 
-<div class="content mt-5">
-    <div class="container">
-
-        <div class="container main">
-            <div class="text-center head">
-                <div class="col" data-aos="zoom-in-up">
-                    <h2 class="mt-3 mb-5">Menu</h2>
-                </div>
-                <div class="col" data-aos="fade-right">
-                    <h3 class="judultiga">Paket</h3>
-                </div>
-            </div>
-            <div class="row">
-                <?php foreach ($data as $key => $value) : ?>
-                    <form action="/menuuser/detailed/<?= encrypt_url($value['id']) ?>" method="post">
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                                <img src="/assets/img/<?= $value['gambar'] ?>" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text"><?= $value['title'] ?></h5>
-                                    <p class="card-text"><?= $value['harga'] ?></p>
-                                    <button class="btn mt-2" type="submit">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                <?php endforeach; ?>
-            </div>
-
-            <div class="col" data-aos="fade-right">
-                <h3 class="judulempat">Makanan</h3>
-            </div>
-            <div class="row">
-                <?php foreach ($data as $key => $value) : ?>
-                    <div class="col">
-                        <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                            <img src="/assets/img/<?= $value['gambar'] ?>" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-text"><?= $value['title'] ?></h5>
-                                <p class="card-text"><?= $value['harga'] ?></p>
-                                <a href="/menuuser/detailed/<?= decrypt_url($value['id']) ?>" class="btn mt-2">Order</a>
-                            </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-
-            <div class="col-12" data-aos="fade-right">
-                <span class="mt-4 judulempat">Minuman</span>
-            </div>
-            <div class="row">
-                <?php foreach ($data as $key => $value) : ?>
-                    <div class="col">
-                        <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                            <img src="/assets/img/<?= $value['gambar'] ?>" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-text"><?= $value['title'] ?></h5>
-                                <p class="card-text"><?= $value['harga'] ?></p>
-                                <a href="/menuuser/detailed/<?= decrypt_url($value['id']) ?>" class="btn mt-2">Order</a>
-                            </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-
-            <div class="col-12" data-aos="fade-right">
-                <span class="mt-4 judulempat">Cemilan</span>
-            </div>
-            <div class="row">
-                <?php foreach ($data as $key => $value) : ?>
-                    <div class="col">
-                        <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                            <img src="/assets/img/<?= $value['gambar'] ?>" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-text"><?= $value['title'] ?></h5>
-                                <p class="card-text"><?= $value['harga'] ?></p>
-                                <a href="/menuuser/detailed/<?= decrypt_url($value['id']) ?>" class="btn mt-2">Order</a>
-                            </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
+<section class="menu pt-5 mb-5">
+  <div class="container">
+    <h2 class="mb-4" data-aos="fade-up">Menu</h2>
+    <!-- pilihan menu -->
+    <div class="row bg-white">
+      <div class="col-12 kategori">
+        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" data-aos="fade-up" data-aos-delay="100" href="#paket">Paket</a>
+        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" data-aos="fade-up" data-aos-delay="200" href="#makanan">Makanan</a>
+        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" data-aos="fade-up" data-aos-delay="300" href="#minuman">Minuman</a>
+        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" data-aos="fade-up" data-aos-delay="400" href="#cemilan">Cemilan</a>
+      </div>
     </div>
+    <!-- menu -->
+    <div class="row menu">
+      <div class="col-12">
+        <!-- paket -->
+        <div class="konten" id="paket">
+          <h3 class="mt-4" data-aos="zoom-up">Paket</h3>
+          <div class="sec">
+            <?php foreach ($data as $key => $value) : ?>
+              <div class="box shadow-sm" data-aos="flip-left">
+                <img src="/assets/img/<?= $value['gambar'] ?>" alt="">
+                <h4><?= $value['title'] ?></h4>
+                <p class="d-flex justify-content-between pl-2 pr-2"><?= $value['harga'] ?><span>Stok <?= $value['stok'] ?></span></p>
+                <a class="btn btn-sm btn-success" href="">Tambah</a>
+              </div>
+            <?php endforeach ?>
+          </div>
+        </div>
 
-    <?= $this->endSection() ?>
+        <!-- makanan -->
+        <div class="konten" id="makanan">
+          <h3 class="mt-4" data-aos="zoom-up">Makanan</h3>
+          <div class="sec">
+            <?php foreach ($data as $key => $value) : ?>
+              <div class="box shadow-sm" data-aos="flip-left">
+                <img src="/assets/img/<?= $value['gambar'] ?>" alt="">
+                <h4><?= $value['title'] ?></h4>
+                <p class="d-flex justify-content-between pl-2 pr-2"><?= $value['harga'] ?><span>Stok <?= $value['stok'] ?></span></p>
+                <a class="btn btn-sm btn-success" href="">Tambah</a>
+              </div>
+            <?php endforeach ?>
+          </div>
+        </div>
+
+        <!-- minuman -->
+        <div class="konten" id="minuman">
+          <h3 class="mt-4" data-aos="zoom-up">Minuman</h3>
+          <div class="sec">
+            <?php foreach ($data as $key => $value) : ?>
+              <div class="box shadow-sm" data-aos="flip-left">
+                <img src="/assets/img/<?= $value['gambar'] ?>" alt="">
+                <h4><?= $value['title'] ?></h4>
+                <p class="d-flex justify-content-between pl-2 pr-2"><?= $value['harga'] ?><span>Stok <?= $value['stok'] ?></span></p>
+                <a class="btn btn-sm btn-success" href="">Tambah</a>
+              </div>
+            <?php endforeach ?>
+          </div>
+        </div>
+
+        <!-- cemilan -->
+        <div class="konten" id="cemilan">
+          <h3 class="mt-4" data-aos="zoom-up">Cemilan</h3>
+          <div class="sec">
+            <?php foreach ($data as $key => $value) : ?>
+              <div class="box shadow-sm" data-aos="flip-left">
+                <img src="/assets/img/<?= $value['gambar'] ?>" alt="">
+                <h4><?= $value['title'] ?></h4>
+                <p class="d-flex justify-content-between pl-2 pr-2"><?= $value['harga'] ?><span>Stok <?= $value['stok'] ?></span></p>
+                <a class="btn btn-sm btn-success" href="">Tambah</a>
+              </div>
+            <?php endforeach ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<?= $this->endSection() ?>

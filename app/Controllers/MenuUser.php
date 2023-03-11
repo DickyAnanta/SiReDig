@@ -13,7 +13,7 @@ class MenuUser extends BaseController
         $this->menuModel = new MenuModel();
     }
 
-    public function index($alert = '')
+    public function index()
     {
         $datas = [
             "select" => "id, title, deskripsi, gambar, tipe, harga, stok",
@@ -26,12 +26,9 @@ class MenuUser extends BaseController
                 "lenght" => -1,
                 "start" => ""
             ],
-            "whereclause" => ""
+            "whereclause" => "tipe ='minuman'"
         ];
-        $ret = $this->menuModel->menu(encrypt_url(1), $datas, "get");
-        if (!empty($alert['alert'])) {
-            $ret['alert'] = $alert['alert'];
-        }
+        $ret = $this->menuModel->menu(0, $datas, "get");
         return view('/user/menu/menu', $ret);
     }
 
@@ -46,7 +43,6 @@ class MenuUser extends BaseController
             'harga' => $ret['harga'],
             'stok' => $ret['stok']
         ];
-        // dd($data);
         return view('/user/menu/detailmenu', $data);
     }
 }

@@ -38,10 +38,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <div id="alert-data" title="<?= @$alert["title"]; ?>" type="<?= @$alert["type"]; ?>" message="<?= @$alert["message"]; ?>" cobtn="<?= @$alert["cobtn"]; ?>" redirect="<?= @$alert["redirect"]; ?>" redirect-to="<?= @$alert["redirect_to"]; ?>"></div>
   <div class="wrapper">
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white sticky-top">
       <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="../img/loogo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
+        <a href="" class="navbar-brand">
+          <img src="/assets/img/loogo.png" alt="AdminLTE Logo" class="brand-image">
         </a>
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,33 +55,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Left navbar links -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="/beranda" class="bar">Beranda</a>
+                <a href="berandauser" class="bar">Beranda</a>
               </li>
               <li class="nav-item">
-                <a href="/menu/tampilan" class="bar ml-5">Menu</a>
+                <a href="menuuser" class="bar">Menu</a>
               </li>
               <li class="nav-item">
-                <a href="" class="bar ml-5">Order</a>
+                <a href="orderuser" class="bar">Order</a>
               </li>
-              <li class="nav-item dropdown">
-                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="bar ml-5 dropdown-toggle">Admin</a>
-                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                  <li><a href="/user" class="dropdown-item">List User</a></li>
-                  <li><a href="/user/edit" class="dropdown-item">Form User</a></li>
-
-                  <li class="dropdown-divider"></li>
-
-                  <li><a href="/menu" class="dropdown-item">List Menu</a></li>
-                  <li><a href="/menu/edit" class="dropdown-item">Form Menu</a></li>
-
-                </ul>
+              <li class="nav-item">
+                <a href="pesananuser" class="bar">Pesanan</a>
               </li>
-              <li class="profile"">
-                <h3>Admin1</h3>
-                <p>1232</p>
-              </li>
-              <li class=" nav-item">
-                <a href="/berandauser" class="masuk ml-5">Keluar</a>
+              <li class="nav-item">
+                <a href="/login/logout" class="bar">Keluar</a>
               </li>
             </ul>
         </div>

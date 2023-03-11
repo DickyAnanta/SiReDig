@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="col-auto">
-					<a class="btn" href="/menu/edit"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Tambah Menu</a>
+					<a class="btn btn-sm btn-success" href="/menu/edit"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Tambah Menu</a>
 				</div>
 			</div>
 		</div><!-- /.container-fluid -->
@@ -39,30 +39,30 @@
 					<!-- <div class="card border-top-0"> -->
 					<!-- /.card-header -->
 					<div class="table-responsive p-1">
-						<table class="table table-hover table-borderless table-striped text-nowrap">
+						<table class="table table-hover table-borderless table-striped">
 							<thead>
 								<tr>
 									<div class="row">
 										<div class="col">
-											<th>Menu</th>
+											<th class="">Menu</th>
 										</div>
 										<div class="col">
-											<th>Nama</th>
+											<th class="">Nama</th>
 										</div>
 										<div class="col">
-											<th>Deskripsi</th>
+											<th class="">Deskripsi</th>
 										</div>
 										<div class="col">
-											<th>Type</th>
+											<th class="">Type</th>
 										</div>
 										<div class="col">
-											<th>Harga</th>
+											<th class="">Harga</th>
 										</div>
 										<div class="col">
-											<th>Stok</th>
+											<th class="">Stok</th>
 										</div>
 										<div class="col">
-											<th>Action</th>
+											<th class="">Action</th>
 										</div>
 									</div>
 								</tr>

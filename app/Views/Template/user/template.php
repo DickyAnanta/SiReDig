@@ -38,10 +38,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <div id="alert-data" title="<?= @$alert["title"]; ?>" type="<?= @$alert["type"]; ?>" message="<?= @$alert["message"]; ?>" cobtn="<?= @$alert["cobtn"]; ?>" redirect="<?= @$alert["redirect"]; ?>" redirect-to="<?= @$alert["redirect_to"]; ?>"></div>
   <div class="wrapper">
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white sticky-top">
       <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="../img/loogo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
+        <a href="" class="navbar-brand">
+          <img src="/assets/img/loogo.png" alt="AdminLTE Logo" class="brand-image">
         </a>
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,13 +58,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="/berandauser" class="bar">Beranda</a>
               </li>
               <li class="nav-item">
-                <a href="/menuuser" class="bar ml-5">Menu</a>
+                <a href="/menuuser" class="bar">Menu</a>
               </li>
               <li class="nav-item">
-                <a href="" class="bar ml-5">Order</a>
+                <a href="/orderuser" class="bar">Order</a>
               </li>
-              <li class=" nav-item">
-                <a href="/login" class="masuk ml-5">Masuk</a>
+              <li class="nav-item">
+                <a href="/pesananuser" class="bar">Pesanan</a>
+              </li>
+              <li class="nav-item">
+                <a href="/login" class="bar">Masuk</a>
               </li>
             </ul>
         </div>
@@ -89,7 +92,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- aos -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script type="text/javascript">
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   </script>
   <script src="/assets/declar.js"></script>
   <!-- AdminLTE App -->
