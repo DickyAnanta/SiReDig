@@ -55,16 +55,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Left navbar links -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="berandauser" class="bar">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a href="menuuser" class="bar">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a href="orderuser" class="bar">Order</a>
+                <a href="berandauser" class="bar">Dashboard</a>
               </li>
               <li class="nav-item">
                 <a href="pesananuser" class="bar">Pesanan</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a class="bar dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/user">List User</a>
+                    <a class="dropdown-item border-bottom" href="/user/edit">Tambah User</a>
+                    <a class="dropdown-item" href="/menu">List Menu</a>
+                    <a class="dropdown-item" href="/menu/edit">Tambah Menu</a>
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a href="/login/logout" class="bar">Keluar</a>
@@ -80,6 +87,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </tbody>
 
   <script src="/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- sweetalert -->
   <script src="/assets/js/sweetalert2.all.min.js"></script>
   <!-- sweetalert -->

@@ -15,15 +15,14 @@
               <div class="box shadow-sm" data-aos="fade-down">
                 <img src="/assets/img/Paket1.png" alt="">
                 <h4>Paket 1</h4>
-                <input type="hidden" id="paket1" value="paket1">
                 <p class="d-flex justify-content-between pl-2 pr-2">RP30.000<span>Stok 5</span></p>
-                <a class="btn btn-sm btn-success" href="#" id="tambahpesanan">Tambah</a>
+                <a class="btn btn-sm btn-success" href="">Tambah</a>
               </div>
               <div class="box shadow-sm" data-aos="fade-down">
                 <img src="/assets/img/Paket2.png" alt="">
                 <h4>Paket 2</h4>
                 <p class="d-flex justify-content-between pl-2 pr-2">RP60.000<span>Stok 5</span></p>
-                <button class="btn btn-sm btn-success" name="paket" value="paket2">Tambah</button>
+                <a class="btn btn-sm btn-success" href="">Tambah</a>
               </div>
               <div class="box shadow-sm" data-aos="fade-down">
                 <img src="/assets/img/paket3.png" alt="">
@@ -90,7 +89,7 @@
               <?php foreach ($data as $value) : ?>
                 <div class="box shadow-sm" data-aos="fade-down">
                   <img src="/assets/img/<?= $value['gambar'] ?>" alt="">
-                  <h4><?= $value['title'] ?></h4>
+                  <h4 name="title"><?= $value['title'] ?></h4>
                   <p class="d-flex justify-content-between pl-2 pr-2" name="harga"><?= $value['harga'] ?><span>Stok <?= $value['stok'] ?></span></p>
                   <button class="btn btn-sm btn-success" type="submit" id="submit">Tambah</button>
                 </div>
@@ -146,7 +145,11 @@
         <div class="card-body">
           <div class="row">
             <div class="col-6">
-              <input type="text" class="form-control float-right" name="title" id="detail-pesanan" value="">
+              <p class="float-left p-0">Burger Special <span class="text-success">RP25.000</span></p>
+            </div>
+            <div class="col-6">
+              <a href="" class="btn btn-sm btn-danger float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
           <div class="row">
@@ -186,24 +189,10 @@
 </section>
 
 <script>
-  $("#tambahpesanan").click(function() {
-    var title = $("#paket").val();
-
-    if (title == 0) {
-      swal("OPPS", "Warning");
-    } else {
-      $.ajax({
-        type: 'POST',
-        url: '<?= base_url() ?>/orderuser/simpanpesanan',
-        data: {
-          paket: paket
-        },
-        cache: false,
-        success: function(respond) {
-
-        }
-      });
-    }
+  $(document).ready(function() {
+    $("#submit").click(function() {
+      $("#detail-pesanan").show();
+    });
   });
 </script>
 

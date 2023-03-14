@@ -9,10 +9,10 @@
 		<div class="container">
 			<div class="row mb-3 mt-3 justify-content-end">
 				<div class="col">
-					<h3>List Menu</h3>
+					<h3 data-aos="fade-right">List Menu</h3>
 				</div>
 				<div class="col-auto">
-					<div class="card-tools">
+					<div class="card-tools" data-aos="fade-left" data-aos-delay="100">
 						<div class="input-group input-group-sm" style="width: 175px;">
 							<input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 							<div class="input-group-append">
@@ -24,7 +24,9 @@
 					</div>
 				</div>
 				<div class="col-auto">
-					<a class="btn btn-sm btn-success" href="/menu/edit"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Tambah Menu</a>
+					<a class="btn btn-sm btn-success" data-aos="fade-left" href="/menu/edit">
+						<i class="fa fa-plus mr-2" aria-hidden="true">
+						</i>Tambah Menu</a>
 				</div>
 			</div>
 		</div><!-- /.container-fluid -->
@@ -44,41 +46,41 @@
 								<tr>
 									<div class="row">
 										<div class="col">
-											<th class="">Menu</th>
+											<th class="" data-aos="fade-up">Menu</th>
 										</div>
 										<div class="col">
-											<th class="">Nama</th>
+											<th class="" data-aos="fade-up">Nama</th>
 										</div>
 										<div class="col">
-											<th class="">Deskripsi</th>
+											<th class="" data-aos="fade-up">Deskripsi</th>
 										</div>
 										<div class="col">
-											<th class="">Type</th>
+											<th class="" data-aos="fade-up">Tipe</th>
 										</div>
 										<div class="col">
-											<th class="">Harga</th>
+											<th class="" data-aos="fade-up">Harga</th>
 										</div>
 										<div class="col">
-											<th class="">Stok</th>
+											<th class="" data-aos="fade-up">Stok</th>
 										</div>
 										<div class="col">
-											<th class="">Action</th>
+											<th class="" data-aos="fade-up">Action</th>
 										</div>
 									</div>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody data-aos="fade-up" data-aos-delay="100">
 								<?php foreach ($data as $key => $value) : ?>
 									<tr>
-										<td><img src="/assets/img/<?= $value['gambar'] ?>" alt=""></td>
+										<td><img src="/assets/img/<?= $value['gambar'] ?>" alt="" height="50px"></td>
 										<td class="menu"><?= $value['title'] ?></td>
 										<td class="menu"><?= $value['deskripsi'] ?></td>
 										<td class="menu"><?= $value['tipe'] ?></td>
 										<td class="menu"><?= $value['harga'] ?></td>
 										<td class="menu"><?= $value['stok'] ?></td>
 										<td class="menu">
-											<a class="btn" href="/menu/edit/<?= encrypt_url($value['id']) ?>">Edit</a>
-											<a class="btn" href="/menu/delete/<?= encrypt_url($value['id']) ?>">Hapus</a>
+											<a class="btn btn-warning text-white" href="/menu/edit/<?= encrypt_url($value['id']) ?>">Edit</a>
+											<a class="btn btn-danger text-white" href="/menu/delete/<?= encrypt_url($value['id']) ?>">Hapus</a>
 										</td>
 									</tr>
 								<?php endforeach; ?>

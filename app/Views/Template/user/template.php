@@ -9,6 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Siredig</title>
+  <link rel="icon" href="/assets/img/icon.png">
 
   <!-- base url -->
 
@@ -80,6 +81,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </tbody>
 
   <script src="/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- sweetalert -->
   <script src="/assets/js/sweetalert2.all.min.js"></script>
   <!-- sweetalert -->

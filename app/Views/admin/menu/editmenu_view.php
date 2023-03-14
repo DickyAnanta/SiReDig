@@ -92,7 +92,7 @@
                 <div class="row tombolform">
                   <div class="col-sm-2">
                     <td>
-                      <button type="submit" class="btn btn-sm">Simpan</button>
+                      <button type="submit" class="btn btn-success">Simpan</button>
                     </td>
                   </div>
                 </div>
